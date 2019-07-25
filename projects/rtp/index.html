@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+	<title>Рустехпром | Уведомление клиентам</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!--[if !mso]>
+    <link href='https://www.digitalserv.ru/mail/rtp-client/fonts/PFDinDisplayPro-Light.woff' rel='stylesheet' type='text/css'>
+    <!--<![endif]-->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+        table table table {
+            table-layout: auto;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        *[x-apple-data-detectors],  /* iOS */
+        .x-gmail-data-detectors,    /* Gmail */
+        .x-gmail-data-detectors *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* What it does: Prevents underlining the button text in Windows 10 */
+        .button-link {
+            text-decoration: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+    </style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+        body {
+    font-family: sans-serif;
+        }
+
+
+    /* Media Queries */
+    @media screen and (max-width: 480px) {
+
+        /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+        .fluid {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+           /* display: block !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            direction: ltr !important;*/
+        }
+        /* And center justify these ones. */
+        .stack-column-center {
+            text-align: center !important;
+        }
+
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+            text-align: center !important;
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            float: none !important;
+        }
+        table.center-on-narrow {
+            display: inline-block !important;
+        }
+
+        /* What it does: Adjust typography on small screens to improve readability */
+        .email-container p {
+            font-size: 16px !important;
+        }
+    }
+
+    </style>
+    <!-- Progressive Enhancements : END -->
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+</head>
+
+<body width="100%" bgcolor="#eaeaea" style="margin: 0; mso-line-height-rule: exactly;">
+    <center style="width: 100%; background: #eaeaea; text-align: left;">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#eaeaea">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <div style="max-width: 680px; margin: auto;background: url(../rtp/rtp_mail_bg.png) no-repeat" class="email-container">
+            <!--[if mso]>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center" style="background: url(../rtp/rtp_mail_bg.png) no-repeat">
+            <tr>
+            <td>
+            <![endif]-->
+
+            <!-- Email Header : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+                <tr>
+                    <td style="padding: 20px 0 0 20px; text-align: left">
+                        <img src="../rtp/rtp_mail_logo.png" width="" height="" alt="" border="0" style="height: auto;">
+                    </td>
+                </tr>
+            </table>
+            <!-- Email Header : END -->
+
+            <!-- Email Body : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;" class="email-container">
+
+
+                <!-- 1 Column Text + Button : BEGIN -->
+                <tr>
+                    <td>
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+								<td align="left" style="padding: 20px;">
+								<p style="font-family:'DinDisplayPro-Med', sans-serif;">Уважаемый клиент!</p>
+								Компания Рустехпром уведомляет Вас:<br>
+								Согласно договору на техническую поддержку контрольно-кассовой техники<br>
+								необходимо оплатить счет за 2-ой квартал 2018 года.<br>
+
+								<p>Счет вложен в сообщение.<p>
+
+								<p>Также уведомляем Вас, что в связи с участившимися сбоями в работе онлайн-касс,<br> рекомендуем связаться с нашими менеджерами по ТО и договориться о времени и дате визита наших специалистов для проведения профилактических работ на ККТ.</p>
+
+								<p>Данное письмо отправлено автоматически и не требует ответа.</p><br>
+
+
+								С Уважением,<br>
+								ООО «Рустехпром»<br>
+								Телефон службы клиентской поддержки: <a href="#">+7 (495) 984-06-15</a><br>
+								www.digitalserv.ru
+								</td>
+                            </tr>
+							<tr>
+								<td align="left" style="color: #000; padding: 10px 20px 10px 20px;">
+									<p style="font-size:10px">109472, Г. МОСКВА, УЛ. ТАШКЕНТСКАЯ, Д. 28 СТРОЕНИЕ 1, ТЕЛ. + 7 (495) 984-08-85, E-MAIL: MSK@DIGITALSERV.RU, ИНН 7721853022, КПП 772101001, ОГРН 5147746375596, Р/С 40702810038000017842 БАНК ПАО «СБЕРБАНК РОССИИ», К/С 30101810400000000225, БИК 044525225, ОКПО 40179948</p>
+								</td>
+							</tr>
+                            <tr>
+                                <td style="padding: 0 20px; font-family: 'DinDisplayPro-Light', sans-serif; font-size: 16px; line-height: 140%; color: #555555;">
+                                    <!-- Button : BEGIN -->
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                                        <tr>
+                                            <td style="background: #ffda69; text-align: center; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px;">
+                                                <a href="https://www.digitalserv.ru/category/aktsii/" style="background: #ffda69; border: 15px solid #ffda69; font-family: 'DinDisplayPro-Light', sans-serif; font-size: 16px; line-height: 110%; text-align: center; text-decoration: none; display: block; font-weight: bold; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px;">
+                                                    <span style="color:#000;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;НАШИ АКЦИИ&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- Button : END -->
+                                </td>
+                            </tr>
+
+                            <tr>
+								<td align="center" style="padding: 0 20px;">
+								<p style="font-family:'DinDisplayPro-Med', sans-serif;font-weight: bold">Подписывайтесь на наш канал на <a href="#">YouTube</a></p>
+								</td>
+                            </tr>
+
+							<tr>
+								<td align="center">
+									<a href="#"><img src="../rtp/rtp_mail_instruction.png" width="100%" height="" alt="Подписаться" border="0" align="center" style="width: 100%; max-width: 680px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 16px; line-height: 140%; color: #555555; margin: auto;" class="fluid g-img"></a>
+								</td>
+							</tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- 1 Column Text + Button : END -->
+
+                <!-- 3 Even Columns : BEGIN -->
+				<tr>
+					<td align="center" style="padding: 0 20px;">
+					<p style="font-family:'DinDisplayPro-Med', sans-serif;font-weight: bold">Мы в социальных сетях</p>
+					</td>
+				</tr>
+                <tr>
+                    <td align="center" height="100%" valign="top" width="100%" style="padding: 10px 0;">
+                        <!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                        <tr>
+                        <td align="center" valign="top" width="660">
+                        <![endif]-->
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:660px;">
+                            <tr>
+                                <td align="center" valign="top" style="font-size:0;">
+                                    <!--[if mso]>
+                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+                                    <div style="display:inline-block; margin: 0 -2px; max-width:33.33%; min-width:120px; vertical-align:top; width:100%;" class="stack-column">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td>
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: right;">
+                                                        <tr>
+                                                            <td>
+                                                                <a href="#"><img width="50" height="auto" src="../rtp/rtp_mail_youtube.png" alt="YouTube"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+                                    <div style="display:inline-block; margin: 0 -2px; max-width:33.33%; min-width:120px; vertical-align:top; width:100%;" class="stack-column">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td>
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: center;">
+                                                        <tr>
+                                                            <td>
+                                                                <a href="#"><img width="50" height="auto" src="../rtp/rtp_mail_twitter.png" alt="Twitter"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+                                    <div style="display:inline-block; margin: 0 -2px; max-width:33.33%; min-width:120px; vertical-align:top; width:100%;" class="stack-column">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td>
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                                        <tr>
+                                                            <td>
+                                                                <a href="#"><img width="50" height="auto" src="../rtp/rtp_mail_vk.png" alt="Вконтакте"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+                <!-- 3 Even Columns : END -->
+
+                <!-- Clear Spacer : BEGIN -->
+                <tr>
+                    <td aria-hidden="true" height="190" style="font-size: 0; line-height: 0;">
+                        &nbsp;
+                    </td>
+                </tr>
+                <!-- Clear Spacer : END -->
+
+            </table>
+            <!-- Email Body : END -->
+
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+</html>

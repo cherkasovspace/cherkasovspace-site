@@ -1,0 +1,226 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="project-9.html"><i class="pe-7s-icon pe-7s-angle-left"></i></a>
+                <a class="ajax-page-load" href="project-11.html"><i class="pe-7s-icon pe-7s-angle-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="pe-7s-icon pe-7s-close"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Email-рассылки</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <div class="owl-carousel portfolio-page-carousel">
+                    <div class="item gallery">
+                        <a href="images/projects/10-project.jpg" class="lightbox f-gallery" title="Email-рассылки"><img src="images/projects/10-project.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+
+                    $('.lightbox:not(.f-gallery)').magnificPopup({
+                        type: 'image',
+                        removalDelay: 300,
+                        gallery: {
+                        enabled: true
+                        },
+
+                        mainClass: 'mfp-fade',
+                        image: {
+                            titleSrc: 'title',
+                            gallery: {
+                                enabled: true
+                            },
+                        },
+
+                        iframe: {
+                            markup: '<div class="mfp-iframe-scaler">'+
+                                    '<div class="mfp-close"></div>'+
+                                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                                    '<div class="mfp-title mfp-bottom-iframe-title"></div>'+
+                                  '</div>',
+
+                            patterns: {
+                                youtube: {
+                                  index: 'youtube.com/',
+
+                                  id: 'v=',
+                                  src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                                },
+                                vimeo: {
+                                  index: 'vimeo.com/',
+                                  id: '/',
+                                  src: '//player.vimeo.com/video/%id%?autoplay=1'
+                                },
+                                gmaps: {
+                                  index: '//maps.google.',
+                                  src: '%id%&output=embed'
+                                }
+                            },
+
+                            srcAction: 'iframe_src',
+                        },
+
+                        callbacks: {
+                            markupParse: function(template, values, item) {
+                             values.title = item.el.attr('title');
+                            }
+                        },
+                    });
+
+                    $('.gallery').each(function() {
+                        $(this).magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            gallery: {
+                            enabled:true
+                            }
+                        });
+                    });
+
+                    function customAjaxScroll() {
+                        var windowWidth = $(window).width();
+                        if (windowWidth > 991) {
+                            // Custom Ajax Page Scroll
+                            $("#ajax-page").mCustomScrollbar({
+                                scrollInertia: 8,
+                                documentTouchScroll: false
+                            });
+                        } else {
+                            $("#ajax-page").mCustomScrollbar('destroy');
+                        }
+                    }
+
+                    jQuery(document).ready(function($){
+
+                        // Ajax Loaded Page Scroll
+                        customAjaxScroll();
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+
+                    jQuery(window).on('resize', function() {
+                        customAjaxScroll();
+                    });
+                </script>
+            </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="block-title">
+                    <h3>Описание</h3>
+                </div>
+                <ul class="project-general-info">
+                    <li><p><i class="fa fa-info-circle"></i> 7 почтовых рассылок HTML</p></li>
+                    <li><p><i class="fa fa-info-circle"></i> Верстка</p></li>
+                    <li><p><i class="fa fa-calendar"></i> 2017-2018</p></li>
+                </ul>
+
+                <p class="text-justify">Почтовые рассылки с коммерческими предложениями и/или информацией о компании.</p>
+                <!-- /Project Description -->
+
+                <!-- Technology -->
+                <div class="tags-block">
+                    <ul class="tags">
+                        <li><a>HTML5</a></li>
+                        <li><a>CSS3</a></li>
+                    </ul>
+                </div>
+                <!-- /Technology -->
+
+                <a href="/projects/emailgtione" target="_blank" class="cbtn nav-link">
+                    <div class="cbtn-bottom"></div>
+                    <div class="cbtn-top">
+                    <div class="cbtn-label">Email-рассылка 1</div>
+                    <div class="cbtn-border cbtn-border-left"></div>
+                    <div class="cbtn-border cbtn-border-top"></div>
+                    <div class="cbtn-border cbtn-border-right"></div>
+                    <div class="cbtn-border cbtn-border-bottom"></div>
+                    </div>
+                </a>
+
+                <a href="/projects/emailservis" target="_blank" class="cbtn nav-link">
+                    <div class="cbtn-bottom"></div>
+                    <div class="cbtn-top">
+                    <div class="cbtn-label">Email-рассылка 2</div>
+                    <div class="cbtn-border cbtn-border-left"></div>
+                    <div class="cbtn-border cbtn-border-top"></div>
+                    <div class="cbtn-border cbtn-border-right"></div>
+                    <div class="cbtn-border cbtn-border-bottom"></div>
+                    </div>
+                </a>
+
+                <a href="/projects/emailtrdoors" target="_blank" class="cbtn nav-link">
+                    <div class="cbtn-bottom"></div>
+                    <div class="cbtn-top">
+                    <div class="cbtn-label">Email-рассылка 3</div>
+                    <div class="cbtn-border cbtn-border-left"></div>
+                    <div class="cbtn-border cbtn-border-top"></div>
+                    <div class="cbtn-border cbtn-border-right"></div>
+                    <div class="cbtn-border cbtn-border-bottom"></div>
+                    </div>
+                </a>
+
+                <a href="/projects/kassir" target="_blank" class="cbtn nav-link">
+                    <div class="cbtn-bottom"></div>
+                    <div class="cbtn-top">
+                    <div class="cbtn-label">Email-рассылка 4</div>
+                    <div class="cbtn-border cbtn-border-left"></div>
+                    <div class="cbtn-border cbtn-border-top"></div>
+                    <div class="cbtn-border cbtn-border-right"></div>
+                    <div class="cbtn-border cbtn-border-bottom"></div>
+                    </div>
+                </a>
+
+                <a href="/projects/rtp" target="_blank" class="cbtn nav-link">
+                    <div class="cbtn-bottom"></div>
+                    <div class="cbtn-top">
+                    <div class="cbtn-label">Email-рассылка 5</div>
+                    <div class="cbtn-border cbtn-border-left"></div>
+                    <div class="cbtn-border cbtn-border-top"></div>
+                    <div class="cbtn-border cbtn-border-right"></div>
+                    <div class="cbtn-border cbtn-border-bottom"></div>
+                    </div>
+                </a>
+
+                <a href="/projects/tpp" target="_blank" class="cbtn nav-link">
+                    <div class="cbtn-bottom"></div>
+                    <div class="cbtn-top">
+                    <div class="cbtn-label">Email-рассылка 6</div>
+                    <div class="cbtn-border cbtn-border-left"></div>
+                    <div class="cbtn-border cbtn-border-top"></div>
+                    <div class="cbtn-border cbtn-border-right"></div>
+                    <div class="cbtn-border cbtn-border-bottom"></div>
+                    </div>
+                </a>
+
+                <a href="/projects/newyearvito" target="_blank" class="cbtn nav-link">
+                    <div class="cbtn-bottom"></div>
+                    <div class="cbtn-top">
+                    <div class="cbtn-label">Email-рассылка 7</div>
+                    <div class="cbtn-border cbtn-border-left"></div>
+                    <div class="cbtn-border cbtn-border-top"></div>
+                    <div class="cbtn-border cbtn-border-right"></div>
+                    <div class="cbtn-border cbtn-border-bottom"></div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>

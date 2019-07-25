@@ -1,0 +1,209 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="project-8.html"><i class="pe-7s-icon pe-7s-angle-left"></i></a>
+                <a class="ajax-page-load" href="project-10.html"><i class="pe-7s-icon pe-7s-angle-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="pe-7s-icon pe-7s-close"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Макеты страниц</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <div class="owl-carousel portfolio-page-carousel">
+                    <div id="layoutgallery" class="item">
+                        <img src="images/projects/09-project-t.jpg" alt="">
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+
+$('#layoutgallery').on('click', function() {
+
+    $(this).lightGallery({
+        actualSize: false,
+        hash: false,
+        download: false,
+        share: false,
+        hideBarsDelay: 2000,
+        dynamic: true,
+        dynamicEl: [{
+            "src": 'images/projects/01-maket.png',
+            'thumb': 'images/projects/01-maket.png',
+            'subHtml': '<h4>Макет одной из страниц digitalserv.ru</h4>'
+        }, {
+            "src": 'images/projects/02-maket.png',
+            'thumb': 'images/projects/02-maket.png',
+            'subHtml': '<h4>Макет одной из страниц digitalserv.ru</h4>'
+        }, {
+            "src": 'images/projects/03-maket.png',
+            'thumb': 'images/projects/03-maket.png',
+            'subHtml': '<h4>Макет одной из страниц digitalserv.ru</h4>'
+        }, {
+            "src": 'images/projects/04-maket.png',
+            'thumb': 'images/projects/05-maket.png',
+            'subHtml': '<h4>Макет одной из страниц digitalserv.ru</h4>'
+        }, {
+            "src": 'images/projects/05-maket.png',
+            'thumb': 'images/projects/05-maket.png',
+            'subHtml': '<h4>Макет одной из страниц digitalserv.ru</h4>'
+        }, {
+            "src": 'images/projects/06-maket.png',
+            'thumb': 'images/projects/06-maket.png',
+            'subHtml': '<h4>Макет одной из страниц digitalserv.ru</h4>'
+        }, {
+            "src": 'images/projects/07-maket.png',
+            'thumb': 'images/projects/07-maket.png',
+            'subHtml': '<h4>Макет главной страницы tradedoors.ru</h4>'
+        }]
+    })
+
+});
+
+
+                    // $('.lightbox:not(.f-gallery)').magnificPopup({
+                    //     type: 'image',
+                    //     removalDelay: 300,
+                    //     gallery: {
+                    //     enabled: true
+                    //     },
+
+                    //     mainClass: 'mfp-fade',
+                    //     image: {
+                    //         titleSrc: 'title',
+                    //         gallery: {
+                    //             enabled: true
+                    //         },
+                    //     },
+
+                    //     iframe: {
+                    //         markup: '<div class="mfp-iframe-scaler">'+
+                    //                 '<div class="mfp-close"></div>'+
+                    //                 '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                    //                 '<div class="mfp-title mfp-bottom-iframe-title"></div>'+
+                    //               '</div>',
+
+                    //         patterns: {
+                    //             youtube: {
+                    //               index: 'youtube.com/',
+
+                    //               id: 'v=',
+                    //               src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                    //             },
+                    //             vimeo: {
+                    //               index: 'vimeo.com/',
+                    //               id: '/',
+                    //               src: '//player.vimeo.com/video/%id%?autoplay=1'
+                    //             },
+                    //             gmaps: {
+                    //               index: '//maps.google.',
+                    //               src: '%id%&output=embed'
+                    //             }
+                    //         },
+
+                    //         srcAction: 'iframe_src',
+                    //     },
+
+                    //     callbacks: {
+                    //         markupParse: function(template, values, item) {
+                    //          values.title = item.el.attr('title');
+                    //         }
+                    //     },
+                    // });
+
+                    // $('.gallery').each(function() {
+                    //     $(this).magnificPopup({
+                    //         delegate: 'a',
+                    //         type: 'image',
+                    //         gallery: {
+                    //         enabled:true
+                    //         }
+                    //     });
+                    // });
+
+                    function customAjaxScroll() {
+                        var windowWidth = $(window).width();
+                        if (windowWidth > 991) {
+                            // Custom Ajax Page Scroll
+                            $("#ajax-page").mCustomScrollbar({
+                                scrollInertia: 8,
+                                documentTouchScroll: false
+                            });
+                        } else {
+                            $("#ajax-page").mCustomScrollbar('destroy');
+                        }
+                    }
+
+                    jQuery(document).ready(function($){
+
+                        // Ajax Loaded Page Scroll
+                        customAjaxScroll();
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+
+                    jQuery(window).on('resize', function() {
+                        customAjaxScroll();
+                    });
+                </script>
+            </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="block-title">
+                    <h3>Описание</h3>
+                </div>
+                <ul class="project-general-info">
+                    <li><p><i class="fa fa-info-circle"></i> 7 макетов</p></li>
+                    <li><p><i class="fa fa-arrow-circle-left"></i> Щелкните по изображению, чтобы открыть галерею</p></li>
+                    <li><p><i class="fa fa-globe"></i> <a href="#" rel="nofollow">digitalserv.ru</a></p></li>
+                    <li><p><i class="fa fa-globe"></i> <a href="#" rel="nofollow">tradedoors.ru</a></p></li>
+                    <li><p><i class="fa fa-calendar"></i> 2017-2018</p></li>
+                </ul>
+
+                <p class="text-justify">Несколько макетов страниц основного сайта digitalserv.ru и макет главной страницы сайта tradedoors.ru</p>
+                <!-- /Project Description -->
+
+<!--                 <a href="images/projects/01-project.pdf" target="_blank" class="cbtn nav-link">
+                    <div class="cbtn-bottom"></div>
+                    <div class="cbtn-top">
+                    <div class="cbtn-label">Просмотр</div>
+                    <div class="cbtn-border cbtn-border-left"></div>
+                    <div class="cbtn-border cbtn-border-top"></div>
+                    <div class="cbtn-border cbtn-border-right"></div>
+                    <div class="cbtn-border cbtn-border-bottom"></div>
+                    </div>
+                </a> -->
+                <!-- Technology -->
+<!--                 <div class="tags-block">
+                    <div class="block-title">
+                        <h3>Technology</h3>
+                    </div>
+                    <ul class="tags">
+                        <li><a>HTML5</a></li>
+                        <li><a>CSS3</a></li>
+                        <li><a>jQuery</a></li>
+                        <li><a>Ajax</a></li>
+                        <li><a>PHP5</a></li>
+                    </ul>
+                </div> -->
+                <!-- /Technology -->
+            </div>
+        </div>
+    </div>
+</div>
