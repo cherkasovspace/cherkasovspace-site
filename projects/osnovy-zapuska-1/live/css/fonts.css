@@ -1,0 +1,14 @@
+@font-face{
+	font-family: 'Ubuntu';
+	src: url(../fonts/Ubuntu.eot?),
+		 url(../fonts/Ubuntu.ttf),
+		 url(../fonts/Ubuntu.svg),
+		 url(../fonts/Ubuntu.woff);
+}
+@font-face{
+	font-family: 'Ubuntu Bold';
+	src: url(../fonts/UbuntuBold.eot?),
+		 url(../fonts/UbuntuBold.ttf),
+		 url(../fonts/UbuntuBold.svg),
+		 url(../fonts/UbuntuBold.woff);
+}

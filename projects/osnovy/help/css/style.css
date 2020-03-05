@@ -1,0 +1,141 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	max-width: 100%;
+	overflow: hidden;
+	color: #2D2D2D;
+}
+
+#wrapper {
+	min-width: auto;
+}
+
+.content {
+	max-width: 1170px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+h2 {
+	letter-spacing: 2px;
+}
+
+/* block1 (Шапка) */
+.block1 {
+	padding-bottom: 70px;
+	color: #232C60;
+}
+
+.block1 .p1 {
+	font: 48px 'BebasNeueBold', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 63px;
+	color: #232C60;
+}
+
+.block1 .p1 span {
+	color: #ED1D24;
+}
+
+.block1 .p2 {
+	font: 24px 'MontserratMedium', sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-top: 35px;
+}
+
+.block1 .p2 span {
+	color: #ED1D24;
+}
+
+.block1 ul {
+	width: 870px;
+	margin: 45px auto 0;
+}
+
+.block1 li {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 27px;
+}
+
+.block1 li .il {
+	flex-shrink: 0;
+	width: 44px;
+}
+
+.block1 li p {
+	font: 18px 'MontserratMedium', sans-serif;
+	padding-left: 28px;
+	color: #232C60;
+}
+
+.block1 li p span {
+	font-family: 'MontserratBold', sans-serif;
+}
+
+.block1 .p3 {
+	font: 18px 'MontserratMedium', sans-serif;
+	text-align: center;
+	color: #E20016;
+	padding-top: 30px;
+}
+
+.block1 .p5 {
+	font: 24px 'MontserratMedium', sans-serif;
+	text-align: center;
+	padding-top: 38px;
+}
+
+.block1 .icons {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 18px auto 0;
+}
+
+.block1 .icons .ai {
+	margin: 10px 9px 0;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.block1 .p6 {
+	font: 14px 'Montserrat', sans-serif;
+	color: #404040;
+	text-align: center;
+	padding-top: 47px;
+}
+
+.block1 .p6 a {
+	color: #404040;
+}
+/* The and block1 (Шапка) */

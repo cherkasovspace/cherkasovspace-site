@@ -1,0 +1,152 @@
+/* forma (Форма) */
+@media screen and (max-width: 460px){
+	.form .x {
+		right: 10px;
+	}
+
+	.forma {
+		width: 96%;
+	}
+
+	.form {
+		width: 96%;
+	}
+}
+/* The and forma (Форма) */
+
+/* block1 (Шапка) */
+@media screen and (max-width: 1180px){
+	.block1 .b1, .block1 .b2 {
+		margin: 0 1%;
+	}
+}
+
+@media screen and (max-width: 850px){
+	.block1 .b2 .wp-a .b-a .arrow {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.block1 .f {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.block1 .b1 {
+		width: 98%;
+	}
+
+	.block1 .b2 {
+		margin: 30px auto 0;
+	}
+
+	.block1 .b2 .wp-a {
+		text-align: center;
+	}
+
+	.block1 .b2 .wp-a a {
+		width: 94%;
+	}
+
+	.block1 .b2 .wp-a .b-a {
+		width: 100%;
+	}
+
+	.block1 .b2 .wp-a .b-a p {
+		padding: 17px 5px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.block1 .b2 {
+		width: 98%;
+	}
+}
+/* The and block1 (Шапка) */
+
+/* blockf (Футер) */
+@media screen and (max-width: 1200px){
+	.blockf .b1 {
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
+	.blockf .b2 {
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.blockf .f {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.blockf .b1 {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.blockf .b1-b:first-child {
+		-webkit-order: 1;
+		-moz-order: 1;
+		-ms-order: 1;
+		-o-order: 1;
+		order: 1;
+	}
+
+	.blockf .b1-b:nth-child(2n) {
+		-webkit-order: 2;
+		-moz-order: 2;
+		-ms-order: 2;
+		-o-order: 2;
+		order: 2;
+	}
+
+	.blockf .b1-b p {
+		text-align: center;
+	}
+
+	.blockf .b1 {
+		width: 98%;
+	}
+
+	.blockf .b1-b {
+		width: 100%;
+	}
+
+	.blockf .b2 {
+		width: 98%;
+	}
+
+	.blockf .soc {
+		justify-content: center;
+	}
+
+	.blockf .b2 p {
+		text-align: center;
+	}
+
+	.blockf .soc a {
+		margin: 0 2%;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.blockf .p1 {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+/* The and blockf (Футер) */

@@ -1,0 +1,97 @@
+@import url(style-all.css);
+
+body {
+	background: fixed url(../images/fon1.png) repeat;
+}
+
+#wrapper {
+	min-width: auto;
+	background: fixed url(../images/fon2.png) repeat;
+}
+
+.content {
+	max-width: 1000px;
+}
+
+
+/* block1 (Шапка) */
+.block1 {
+	background: #295883;
+	color: #fff;
+	padding-bottom: 5px;
+}
+
+.block1 h3 {
+	padding: 24px 21% 0;
+	text-align: center;
+	text-transform: none;
+}
+
+.block1 .logo {
+	margin-top: 10px;
+}
+/* The and block1 (Шапка) */
+
+/* block2 (Блок с видео) */
+.block2 {
+	padding-bottom: 50px;
+}
+
+.block2 .video {
+	width: 85%;
+	margin: 20px auto 0;
+}
+
+.block2 .p1 {
+	text-align: center;
+}
+
+.block2 .wp-a .b-a {
+	margin-top: 40px;
+}
+
+.block2 .wp-a .b-a:hover {
+	margin-top: 43px;
+}
+
+.block2 h4 {
+	padding: 40px 0 0 12%;
+}
+
+.block2 ul {
+	padding: 10px 0 0 15%;
+}
+
+.block2 li {
+	padding-top: 10px;
+	list-style-type: disc;
+}
+
+.block2 .p2 {
+	text-align: center;
+	padding-top: 40px;
+}
+/* The and block2 (Блок с видео) */
+
+/* blockf (Футер) */
+.blockf {
+	background: #DCDCDC;
+	padding: 30px 0;
+}
+
+.blockf .b {
+	margin-left: 13.2%;
+}
+
+.blockf p {
+	font: 16px sans-serif;
+	line-height: 20px;
+	float: left;
+	margin-left: 3%;
+	padding-top: 0;
+}
+
+.blockf p a {
+	color: #0900C2;
+}
+/* The and blockf (Футер) */

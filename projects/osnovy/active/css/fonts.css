@@ -1,0 +1,41 @@
+
+@font-face {
+	font-family: "BebasNeueBold"; 
+	src: url("../fonts/BebasNeueBold.eot"); 
+	src: url("../fonts/BebasNeueBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/BebasNeueBold.woff") format("woff"), 
+	url("../fonts/BebasNeueBold.ttf") format("truetype"),
+	url('../fonts/BebasNeueBold.svg#webfont')format('svg');
+	font-style: normal; 
+	font-weight: normal; 
+}
+@font-face {
+	font-family: "Montserrat"; 
+	src: url("../fonts/Montserrat.eot"); 
+	src: url("../fonts/Montserrat.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/Montserrat.woff") format("woff"), 
+	url("../fonts/Montserrat.ttf") format("truetype"),
+	url('../fonts/Montserrat.svg#webfont')format('svg');
+	font-style: normal; 
+	font-weight: normal; 
+}
+@font-face {
+	font-family: "MontserratMedium"; 
+	src: url("../fonts/MontserratMedium.eot"); 
+	src: url("../fonts/MontserratMedium.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/MontserratMedium.woff") format("woff"), 
+	url("../fonts/MontserratMedium.ttf") format("truetype"),
+	url('../fonts/MontserratMedium.svg#webfont')format('svg');
+	font-style: normal; 
+	font-weight: normal; 
+}
+@font-face {
+	font-family: "MontserratBold"; 
+	src: url("../fonts/MontserratBold.eot"); 
+	src: url("../fonts/MontserratBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/MontserratBold.woff") format("woff"), 
+	url("../fonts/MontserratBold.ttf") format("truetype"),
+	url('../fonts/MontserratBold.svg#webfont')format('svg');
+	font-style: normal; 
+	font-weight: normal; 
+}

@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+#Redirect 301 /dohod/webinar.html https://proprodazhy.ru/plan/
+
+#Redirect 301 /dohod/zapusk/index-2.html https://proprodazhy.ru/zapusk-2/
+
+</IfModule>

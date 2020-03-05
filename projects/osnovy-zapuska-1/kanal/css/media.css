@@ -1,0 +1,42 @@
+@media screen and (max-width: 800px){
+	.block2 .video {
+		width: 98%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.block1 {
+		padding: 10px 0 30px;
+	}
+
+	.block1 .logo {
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.block1 h3 {
+		font-size: 25px;
+		line-height: 29px;
+		padding: 20px 1% 0;
+	}
+
+	.wp-a .b-a p {
+		font-size: 20px;
+	}
+}
+
+/* @media screen and (max-height: 700px){
+	.block1 .logo {
+		width: 15%;
+	}
+
+	.block1 h3 {
+		padding-top: 18px;
+	}
+
+	.block2 .video {
+		width: 60%;
+	}
+} */

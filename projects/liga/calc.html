@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="full-height">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фундаментальная программа по развитию бизнеса в онлайне «ЛИГА»</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/magnific-popup.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script>
+        var calculate = {
+            param_dohod: 10000,
+            param_sred: 1000,
+            param_count: 10,
+            dop: {
+                dop_sred:0,
+                dop_rek:0,
+                dop_kon_z:0,
+                dop_konp_o:0,
+                dop_povtor:0,
+                dop_auto:0
+            },
+            dop_value: {
+                dop_sred:0,
+                dop_rek:0,
+                dop_kon_z:0,
+                dop_konp_o:0,
+                dop_povtor:0,
+                dop_auto:0
+            },
+            new: {
+                param_dohod: 0,
+                param_sred: 0,
+                param_count: 0
+            }
+        };
+        function update_calc(){
+            calculate.param_sred = Math.floor(calculate.param_dohod / calculate.param_count);
+
+            calculate.dop_value.dop_sred = ((calculate.param_dohod / calculate.param_count*(calculate.dop.dop_sred/100)*calculate.param_count)+calculate.param_dohod)/calculate.param_count;
+            calculate.dop_value.dop_rek = calculate.param_count * (calculate.dop.dop_rek/100);
+            calculate.dop_value.dop_kon_z = (calculate.param_count + calculate.dop_value.dop_rek) * (calculate.dop.dop_kon_z/100);
+            calculate.dop_value.dop_konp_o = (calculate.param_count + calculate.dop_value.dop_rek + calculate.dop_value.dop_kon_z ) * (calculate.dop.dop_konp_o/100);
+            calculate.dop_value.dop_povtor = (calculate.param_count + calculate.dop_value.dop_rek + calculate.dop_value.dop_kon_z + calculate.dop_value.dop_konp_o ) * (calculate.dop.dop_povtor/100);
+            calculate.dop_value.dop_auto = (calculate.param_count + calculate.dop_value.dop_rek + calculate.dop_value.dop_kon_z + calculate.dop_value.dop_konp_o + calculate.dop_value.dop_povtor ) * (calculate.dop.dop_auto/100);
+
+            calculate.new.param_sred = Math.floor(calculate.dop_value.dop_sred);
+            calculate.new.param_count = Math.floor(calculate.param_count + calculate.dop_value.dop_rek + calculate.dop_value.dop_kon_z + calculate.dop_value.dop_konp_o + calculate.dop_value.dop_povtor + calculate.dop_value.dop_auto);
+            calculate.new.param_dohod = Math.floor(calculate.new.param_sred * calculate.new.param_count);
+            update_view();
+        }
+        function update_view() {
+            $('#param_dohod').val(calculate.param_dohod.toLocaleString()+' ₽');
+            $('#param_sred').html(calculate.param_sred.toLocaleString()+' ₽');
+            $('#param_count').val(calculate.param_count);
+            $('#param_dohod_new').html(calculate.new.param_dohod.toLocaleString()+' ₽');
+            $('#param_sred_new').html(calculate.new.param_sred.toLocaleString()+' ₽');
+            $('#param_count_new').html(calculate.new.param_count);
+            new_column('container1', ['Ваш оборот в месяц',calculate.param_dohod,calculate.new.param_dohod], '₽');
+            new_column('container2', ['Средний чек',calculate.param_sred,calculate.new.param_sred], '₽');
+            new_column('container3', ['Количество оплат в месяц',calculate.param_count,calculate.new.param_count], '');
+        }
+    </script>
+
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JN8TK7');</script>
+<!-- End Google Tag Manager -->
+  </head>
+
+  <body id="top">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JN8TK7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<div id="content">
+
+
+<section class="py-5 grey lighten-4" id="calc">
+  <div class="container">
+
+    <div class="wow fadeIn">
+      <h2 class="h2 text-center">Просчитайте финансовый потенциал своего бизнеса</h2>
+    </div>
+    <div class="row main">
+
+    <div class="col-md-12 main-param">
+        <div class="col-md-6 main-param__block">
+            <h5>Точка А</h5>
+            <p class="sub_header">Ваш оборот в месяц:</p>
+            <p><input type="text" id="param_dohod"></p>
+            <input type="range" class="param_dohod">
+
+            <p class="sub_header">Средний чек:</p>
+            <p id="param_sred" class="sub_value"></p>
+
+            <p class="sub_header">Количество оплат в месяц:</p>
+            <p><input type="text" id="param_count"></p>
+            <input type="range" class="param_count">
+        </div>
+        <div class="col-md-6 main-param__block">
+            <h5>Точка Б</h5>
+            <p class="sub_header">Ваш оборот в месяц:</p>
+            <p id="param_dohod_new" class="sub_value"></p>
+            <p class="sub_header param_sred_margin">Средний чек:</p>
+            <p id="param_sred_new" class="sub_value"></p>
+
+            <p class="sub_header">Количество оплат в месяц:</p>
+            <p id="param_count_new" class="sub_value"></p>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+    <div class="row main">
+
+    <div class="col-md-12 main-param">
+        <div class="col-md-5 main-param__block">
+            <p>Как изменится ваш оборот в месяц, если повлиять на ключевые показатели:</p>
+            <p>Средний чек:</p>
+            <input type="range" class="dop_param dop_sred">
+            <p>Рекламный бюждет:</p>
+            <input type="range" class="dop_param dop_rek">
+            <p>Конверсия с сайта в заявку:</p>
+            <input type="range" class="dop_param dop_kon_z">
+            <p>Конверсия заявки в оплату:</p>
+            <input type="range" class="dop_param dop_konp_o">
+            <p>Количество повторных продаж:</p>
+            <input type="range" class="dop_param dop_povtor">
+            <p>Автоматизация бизнеса:</p>
+            <input type="range" class="dop_param dop_auto">
+        </div>
+        <div class="col-md-7 column-charts main-param__block">
+            <div class="column-charts__item" id="container1"></div>
+            <div class="column-charts__item" id="container2"></div>
+            <div class="column-charts__item" id="container3"></div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+  </div>
+</section>
+
+
+
+</div>
+
+    <footer id="footer">
+      <div class="top-footer">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <ul>
+                <li><p>Служба поддержки</p></li>
+                <li><p><a href="mailto:info@vitaliykuznetsov.com">info@vitaliykuznetsov.com</a></p></li>
+                <li><p><a href="tel:88005550345">8-800-555-03-45</a></p></li>
+              </ul>
+            </div>
+
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <ul>
+                <li><p>© 2014 - 2019</p></li>
+                <li><p>Тренинг-центр Виталия Кузнецова</p></li>
+              </ul>
+            </div>
+
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <ul>
+                <li><p><a href="img/konf.pdf" target="_blank">Политика конфиденциальности</a></p></li>
+                <li><p><a href="img/polsog.pdf" target="_blank">Согласие на обработку персональных данных</a></p></li>
+              </ul>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <a href="https://vk.com/proprodazhy" target="_blank" class="fa fa-vk"></a>
+                <a href="https://www.facebook.com/ProProdazhyru-971569702905951/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/user/VitalyiKuznetsov/about?disable_polymer=1" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/vitalyikuznetsov/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://t.me/joinchat/AAAAAEKy-Cwp4P0HpCpyLQ" target="_blank" class="fa fa-telegram"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/magnific-popup.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+<script type="text/javascript" src="js/anychart-base.min.js"></script>
+<script type="text/javascript" src="js/anychart-cartesian-3d.min.js"></script>
+<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+<link rel="stylesheet" href="css/ion.rangeSlider.css">
+<script>
+    function new_column(id, data, valut){
+        $('#'+id).html("");
+        anychart.onDocumentReady(function () {
+            chartData = {
+                title: '',
+                header: ['#', 'Точка А', 'Точка Б'],
+                rows: [
+                    data,
+                ],
+                fill:['#ffffff', '#000000']
+            };
+
+            var chart = anychart.column3d();
+            chart.data(chartData);
+            chart.animation(true);
+            chart.background().enabled(false);
+            chart.yAxis().enabled(false);
+            chart.xAxis().stroke({
+                color: "#1a191f"});
+            chart.xGrid().enabled(false);
+            chart.yGrid().enabled(false);
+            chart.yAxis().ticks().enabled(false);
+            chart.xAxis().ticks().enabled(false)
+            chart.labels()
+                .enabled(true)
+                .offsetY(-25)
+                .fontColor('#000')
+                .format('{%Value} '+valut);
+            chart.hovered().labels(false);
+            chart.legend().enabled(false);
+            chart.palette(["#4a91d1", "#ed711d"]);
+            chart.interactivity().hoverMode('single');
+            chart.tooltip()
+                .positionMode('point')
+                .position('center-top')
+                .anchor('center-bottom')
+                .offsetX(0)
+                .offsetY(5)
+                .format('{%SeriesName}: {%Value} '+valut+'');
+            chart.container(id);
+            chart.draw();
+        });
+    }
+    $(document).ready(function(){
+        $("input").keypress(function(event){
+            event = event || window.event;
+            if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) )
+                return false;
+        });
+        update_calc();
+        $('.param_dohod').ionRangeSlider({
+            min: 1,
+            max: 10000000,
+            from: calculate.param_dohod,
+            postfix: '₽',
+            onFinish: function (data) {
+                $('#param_dohod').val(data.from_pretty);
+                var newdohod = Number(data.from_pretty.replace(/ /g,''));
+                calculate.param_dohod = newdohod;
+                update_calc();
+            }
+        });
+        $('.param_count').ionRangeSlider({
+            min: 1,
+            max: 1000,
+            from: calculate.param_count,
+            postfix: '',
+            onFinish: function (data) {
+                $('#param_count').val(data.from_pretty);
+                var newcount = Number(data.from_pretty.replace(/ /g,''));
+                calculate.param_count = newcount;
+                update_calc();
+            }
+        });
+        $('.dop_sred').ionRangeSlider({
+            min: 0, max: 100, from: calculate.dop.dop_sred, postfix: '%',
+            onFinish: function (data) {
+                calculate.dop.dop_sred = data.from_pretty;
+                update_calc();
+            }
+        });
+        $('.dop_rek').ionRangeSlider({
+            min: 0, max: 100, from: calculate.dop.dop_rek, postfix: '%',
+            onFinish: function (data) {
+                calculate.dop.dop_rek = data.from_pretty;
+                update_calc();
+            }
+        });
+        $('.dop_kon_z').ionRangeSlider({
+            min: 0, max: 100, from: calculate.dop.dop_kon_z, postfix: '%',
+            onFinish: function (data) {
+                calculate.dop.dop_kon_z = data.from_pretty;
+                update_calc();
+            }
+        });
+        $('.dop_konp_o').ionRangeSlider({
+            min: 0, max: 100, from: calculate.dop.dop_konp_o, postfix: '%',
+            onFinish: function (data) {
+                calculate.dop.dop_konp_o = data.from_pretty;
+                update_calc();
+            }
+        });
+        $('.dop_povtor').ionRangeSlider({
+            min: 0, max: 100, from: calculate.dop.dop_povtor, postfix: '%',
+            onFinish: function (data) {
+                calculate.dop.dop_povtor = data.from_pretty;
+                update_calc();
+            }
+        });
+        $('.dop_auto').ionRangeSlider({
+            min: 0, max: 100, from: calculate.dop.dop_auto, postfix: '%',
+            onFinish: function (data) {
+                calculate.dop.dop_auto = data.from_pretty;
+                update_calc();
+            }
+        });
+        $('#param_dohod').change(function(){
+            var r_param_dohod = $('.param_dohod').data("ionRangeSlider");
+            var newparam_dohod = Number($('#param_dohod').val().replace(/ /g,'').replace(/₽/g,''));
+            r_param_dohod.update({
+                from: newparam_dohod
+            });
+            calculate.param_dohod = newparam_dohod;
+            update_calc();
+        });
+        $('#param_count').change(function(){
+            var r_param_count = $('.param_count').data("ionRangeSlider");
+            var newparam_count = Number($('#param_count').val().replace(/ /g,''));
+            r_param_count.update({
+                from: newparam_count
+            });
+            calculate.param_count = newparam_count;
+            update_calc();
+        });
+    });
+</script>
+  </body>
+</html>

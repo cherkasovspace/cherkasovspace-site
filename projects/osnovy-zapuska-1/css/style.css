@@ -1,0 +1,251 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+#wrapper {
+	min-width: 1000px;
+}
+
+.content {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.wp-a {
+	text-align: center;
+}
+
+.wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.wp-a .b-a {
+	background: #D32E08;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0 auto 3px;
+}
+
+.wp-a .b-a p {
+	font: 30px "Neo Sans Pro Bold", sans-serif;
+	padding: 7px 59px 10px;
+	color: #fff;
+}
+
+.wp-a .b-a:hover {
+	margin: 3px auto 0px;
+}
+
+/* block1 (Шапка) */
+.block1 {
+	height: 687px;
+	background: url(../images/block1.jpg) center top no-repeat;
+}
+
+.block1 p {
+	color: #fff;
+	font: 24px 'Neo Sans Pro', sans-serif;
+	line-height: 32px;
+}
+
+.block1 .p1 {
+	padding: 22px 0 0 109px;
+}
+
+.block1 .p1 span {
+	padding-left: 20px;
+}
+
+.block1 h2 {
+	font: 52px 'Neo Sans Pro Bold', sans-serif;
+	line-height: 68px;
+	color: #D32E08;
+	padding: 47px 0 0 93px;
+}
+
+.block1 h2 span {
+	padding-left: 40px;
+}
+
+.block1 .p2 {
+	text-align: center;
+	padding: 39px 172px 0 0px;
+}
+
+.block1 .wp-a {
+	margin-top: 44px;
+}
+/* The and block1 (Шапка) */
+
+/* block2 (Что полезного) */
+.block2 {
+	color: #080808;
+	padding-bottom: 47px;
+}
+
+.block2 h2 {
+	font: 43px 'Neo Sans Pro Bold', sans-serif;
+	text-align: center;
+}
+
+.block2 ul {
+	padding-left: 56px;
+}
+
+.block2 li {
+	font: 24px 'Neo Sans Pro', sans-serif;
+	line-height: 31px;
+	padding: 32px 0 0 88px;
+}
+
+.block2 li span {
+	font: 24px 'Neo Sans Pro Bold', sans-serif;
+}
+
+.block2 .li_1 {
+	background: url(../images/block2_li_1.png) 0 42px no-repeat;
+}
+
+.block2 .li_2 {
+	background: url(../images/block2_li_2.png) 0 42px no-repeat;
+}
+
+.block2 .p1 {
+	font: 24px 'Neo Sans Pro Bold', sans-serif;
+	line-height: 31px;
+	color: #D32E08;
+	text-align: center;
+	padding-top: 52px;
+}
+
+.block2 .wp-a {
+	margin-top: 35px;
+}
+/* The and block2 (Что полезного) */
+
+/* block3 (Автор) */
+.block3 {
+	height: 648px;
+	background: url(../images/block3.jpg) center top no-repeat;
+	color: #fff;
+}
+
+.block3 h2 {
+	font: 36px 'Neo Sans Pro Bold', sans-serif;
+	padding: 14px 0 0 33px;
+}
+
+.block3 .pl {
+	width: 300px;
+	height: 1px;
+	background: #fff;
+	margin: 25px 0 0px 143px;
+}
+
+.block3 ul {
+	padding-top: 15px;
+}
+
+.block3 li {
+	font: 20px 'Neo Sans Pro', sans-serif;
+	line-height: 26px;
+	padding: 11px 0 15px 57px;
+}
+
+.block3 .li_1 {
+	background: url(../images/block3_li_1.png) 0 14px no-repeat;
+}
+
+.block3 .li_2 {
+	background: url(../images/block3_li_2.png) 0 14px no-repeat;
+}
+
+.block3 .li3 {
+	background-position: 0 0px;
+}
+
+.block3 p {
+	font: 20px 'Neo Sans Pro Bold', sans-serif;
+	padding: 11px 0 0 57px;
+}
+/* The and block3 (Автор) */
+
+/* block4 (Цена) */
+.block4 {
+	padding-bottom: 50px;
+	color: #1C1C1C;
+}
+
+.block4 h2 {
+	font: 52px 'Neo Sans Pro Bold', sans-serif;
+	text-align: center;
+	padding-top: 34px;
+}
+
+.block4 .p1 {
+	text-align: center;
+	font: 24px 'Neo Sans Pro', sans-serif;
+	padding-top: 29px;
+}
+
+.block4 .p1 span {
+	font: 24px 'Neo Sans Pro Bold', sans-serif;
+	color: #D32E08;
+}
+
+.block4 .wp-a {
+	margin-top: 30px;
+}
+
+.block4 .p2 {
+	text-align: center;
+	font: 24px 'Neo Sans Pro', sans-serif;
+	padding-top: 51px;
+}
+
+.block4 .p3 {
+	text-align: center;
+	font: 16px 'Neo Sans Pro', sans-serif;
+	padding: 22px 0 30px;
+}
+
+.block4 .p4 {
+	font: 24px 'Neo Sans Pro', sans-serif;
+	color: #D32E08;
+	text-align: center;
+	padding-top: 5px;
+}
+/* The and block4 (Цена) */
+
+/* blockf (Футер) */
+.blockf {
+	background: #F1F1F1;
+	padding: 20px 0 50px;
+}
+
+.blockf p {
+	font: 10px Verdana, sans-serif;
+	text-align: center;
+	line-height: 16px;
+	padding: 13px;
+	color: #000;
+}
+
+.blockf p a {
+	color: #2738DB;
+}
+
+.blockf .pl {
+	width: 30%;
+	margin: 20px auto 0;
+	height: 1px;
+	background: #000;
+}
+/* The and blockf (Футер) */

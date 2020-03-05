@@ -1,0 +1,28 @@
+/* block1 (Шапка) */
+@media screen and (max-width: 995px){
+	.block1 {
+		background: none;
+	}
+}
+
+@media screen and (max-width: 640px){
+	.block1 .b {
+		width: 98%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.block1 h2 {
+		font-size: 30px;
+	}
+
+	.block1 .p1 {
+		font-size: 18px;
+	}
+
+	.block1 .p2 {
+		font-size: 16px;
+	}
+}
+/* The and block1 (Шапка) */

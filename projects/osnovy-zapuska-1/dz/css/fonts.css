@@ -1,0 +1,88 @@
+@font-face{
+	font-family: 'Open Sans';
+	src: url(../fonts/OpenSans.eot?),
+		 url(../fonts/OpenSans.ttf),
+		 url(../fonts/OpenSans.svg),
+		 url(../fonts/OpenSans.woff);
+}
+@font-face{
+	font-family: 'Open Sans Bold';
+	src: url(../fonts/OpenSansBold.eot?),
+		 url(../fonts/OpenSansBold.ttf),
+		 url(../fonts/OpenSansBold.svg),
+		 url(../fonts/OpenSansBold.woff);
+}
+@font-face{
+	font-family: 'Open Sans Bold Italic';
+	src: url(../fonts/OpenSansBoldItalic.eot?),
+		 url(../fonts/OpenSansBoldItalic.ttf),
+		 url(../fonts/OpenSansBoldItalic.svg),
+		 url(../fonts/OpenSansBoldItalic.woff);
+}
+@font-face{
+	font-family: 'Open Sans Extra Bold';
+	src: url(../fonts/OpenSansExtraBold.eot?),
+		 url(../fonts/OpenSansExtraBold.ttf),
+		 url(../fonts/OpenSansExtraBold.svg),
+		 url(../fonts/OpenSansExtraBold.woff);
+}
+@font-face{
+	font-family: 'Open Sans Extra Bold Italic';
+	src: url(../fonts/OpenSansExtraBoldItalic.eot?),
+		 url(../fonts/OpenSansExtraBoldItalic.ttf),
+		 url(../fonts/OpenSansExtraBoldItalic.svg),
+		 url(../fonts/OpenSansExtraBoldItalic.woff);
+}
+@font-face{
+	font-family: 'Open Sans Italic';
+	src: url(../fonts/OpenSansItalic.eot?),
+		 url(../fonts/OpenSansItalic.ttf),
+		 url(../fonts/OpenSansItalic.svg),
+		 url(../fonts/OpenSansItalic.woff);
+}
+@font-face{
+	font-family: 'Open Sans Light';
+	src: url(../fonts/OpenSansLight.eot?),
+		 url(../fonts/OpenSansLight.ttf),
+		 url(../fonts/OpenSansLight.svg),
+		 url(../fonts/OpenSansLight.woff);
+}
+@font-face{
+	font-family: 'Open Sans Semi Bold';
+	src: url(../fonts/OpenSansSemiBold.eot?),
+		 url(../fonts/OpenSansSemiBold.ttf),
+		 url(../fonts/OpenSansSemiBold.svg),
+		 url(../fonts/OpenSansSemiBold.woff);
+}
+
+@font-face{
+	font-family: 'Open Sans Semi Bold Italic';
+	src: url(../fonts/OpenSansSemiBoldItalic.eot?),
+		 url(../fonts/OpenSansSemiBoldItalic.ttf),
+		 url(../fonts/OpenSansSemiBoldItalic.svg),
+		 url(../fonts/OpenSansSemiBoldItalic.woff);
+}
+
+@font-face{
+	font-family: 'Open Sans Cond Bold';
+	src: url(../fonts/OpenSansCondBold.eot?),
+		 url(../fonts/OpenSansCondBold.ttf),
+		 url(../fonts/OpenSansCondBold.svg),
+		 url(../fonts/OpenSansCondBold.woff);
+}
+
+@font-face{
+	font-family: 'Open Sans Cond Light';
+	src: url(../fonts/OpenSansCondLight.eot?),
+		 url(../fonts/OpenSansCondLight.ttf),
+		 url(../fonts/OpenSansCondLight.svg),
+		 url(../fonts/OpenSansCondLight.woff);
+}
+
+@font-face{
+	font-family: 'Open Sans Light Italic';
+	src: url(../fonts/OpenSansLightItalic.eot?),
+		 url(../fonts/OpenSansLightItalic.ttf),
+		 url(../fonts/OpenSansLightItalic.svg),
+		 url(../fonts/OpenSansLightItalic.woff);
+}

@@ -1,0 +1,85 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	max-width: 100%;
+	overflow: hidden;
+	color: #2D2D2D;
+}
+
+#wrapper {
+	min-width: auto;
+}
+
+.content {
+	max-width: 1170px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+/* block1 (Шапка) */
+.block1 {
+	background: url(../images/block1.jpg) center top no-repeat;
+	min-height: 670px;
+}
+
+.block1 .b {
+	width: 560px;
+	margin: 0 0 0 70px;
+}
+
+.block1 h2 {
+	font: 48px 'BebasNeueBold', sans-serif;
+	color: #ED1D24;
+	letter-spacing: 3px;
+	padding-top: 87px;
+}
+
+.block1 .p1 {
+	font: 24px 'MontserratMedium', sans-serif;
+	line-height: 1.375em;
+	padding: 50px 34px 0 0;
+}
+
+
+.block1 .p2 {
+	font: 18px 'MontserratMedium', sans-serif;
+	line-height: 1.55em;
+	padding: 53px 50px 0 0px;
+}
+
+.block1 .p2 span {
+	color: #606D88;
+}
+/* The and block1 (Шапка) */
+
+/* blockf (Футер) */
+.blockf {
+	padding-bottom: 50px;
+}
+
+.blockf p {
+	font: 14px 'MontserratMedium', sans-serif;
+	color: #606D88;
+	text-align: center;
+	padding-top: 47px;
+}
+
+.blockf p a {
+	color: #606D88;
+}
+/* The and blockf (Футер) */

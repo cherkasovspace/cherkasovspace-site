@@ -911,10 +911,10 @@ ul.social-links li:last-child a {
   display: block;
   width: 100%;
   position: relative;
-  margin: 12px 0 0;
+  margin: 12px 0 5px;
   font-size: 60px;
   line-height: 1.1em;
-  color: #E9F5FD;
+  color: rgba(115, 133, 237, 0.28);
   z-index: 1;
 }
 
@@ -1508,8 +1508,16 @@ opacity:1;
 
 .contact-info-block h5 {
   margin: 5px 0;
-  font-size: 1em;
+  font-size: 2.3em;
 }
+
+@media (max-width: 450px) {
+  .contact-info-block h5 {
+    margin: 5px 0;
+    font-size: 1.1em;
+  }
+}
+
 
 .contact-info-block .pe-7s-icon {
   position: relative;

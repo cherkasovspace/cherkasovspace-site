@@ -1,0 +1,368 @@
+
+
+.pricing_table {
+	font-size: 14px;
+	font-weight: normal;
+	color: #313131;
+	width:100%;
+}
+
+.pricing_table ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.pricing_table ul li {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    min-height: 12vh;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nobg{background: none;}
+
+
+
+/* 1. Common styling */
+
+.pricing_table li.pricing_header1 {
+	height:36px;
+	font-size: 18px;
+	line-height:24px;
+	color:#ffffff;
+
+	/* Rounded Corners */
+	-webkit-border-radius:9px 9px 0 0;
+	-khtml-border-radius:9px 9px 0 0;
+	-moz-border-radius:9px 9px 0 0;
+	border-radius:9px 9px 0 0;
+
+		min-height: 5vh;
+
+}
+.pricing_table li.pricing_header2 {
+	height:60px;
+	font-size: 30px;
+	font-weight:bold;
+	line-height:50px;
+	border-bottom:1px solid #cccccc;
+
+	/* Gradient */
+	background-color:#efefef;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #EBEBEB));
+	background-image: -webkit-linear-gradient(#F3F3F3 0%, #EBEBEB 100%);
+	background-image: -moz-linear-gradient(#F3F3F3 0%, #EBEBEB 100%);
+	background-image: -o-linear-gradient(#F3F3F3 0%, #EBEBEB 100%);
+	background-image: -ms-linear-gradient(#F3F3F3 0%, #EBEBEB 100%);
+	background-image: linear-gradient(#F3F3F3 0%, #EBEBEB 100%);
+	-webkit-transition: font-size 0.2s;
+	-moz-transition: font-size 0.2s;
+	-o-transition: font-size 0.2s;
+	-ms-transition: font-size 0.2s;
+	transition: font-size 0.2s;
+}
+	.pricing_table li.pricing_header2 span {
+		font-size: 10px;
+		line-height:40px;
+	}
+
+/* 2. First column specific styling */
+
+.pricing_table .pricing_column_first li.pricing_header1 {
+	background:none;
+	color:#000;
+}
+.pricing_table .pricing_column_first li.pricing_header2 {
+	background-color:#efefef;
+	border-bottom:1px solid #cccccc;
+	/* Rounded Corners */
+	-webkit-border-radius:9px 9px 0 0;
+	-khtml-border-radius:9px 9px 0 0;
+	-moz-border-radius:9px 9px 0 0;
+	border-radius:9px 9px 0 0;
+}
+	.pricing_table .pricing_column_first li.pricing_header2 span {
+		font-size:18px;
+		font-weight:bold;
+		line-height:56px;
+		padding-left:10px;
+	}
+
+
+
+/*  _______________________________________
+
+	03 COLUMNS STYLING
+    _______________________________________  */
+
+
+
+/* 1. Common columns styling */
+
+.pricing_table .pricing_column_first,
+.pricing_table .pricing_column {
+	height: 100%;
+	float: left;
+	margin-right:1px;
+	position:relative;
+}
+.pricing_table .pricing_column_first {
+	*z-index:2;
+}
+.pricing_table .pricing_hover_area:hover .pricing_column {
+
+}
+	.pricing_table .pricing_hover_area .pricing_column:hover {
+
+	}
+	.pricing_table .pricing_column_first li {
+		text-align: left;
+		    font-weight: 700;
+	}
+		.pricing_table .pricing_column_first li span {
+			padding-left:10px;
+		}
+
+/* 2. Columns sizes */
+
+.pricing_six .pricing_column,
+.pricing_six .pricing_column_first { /* 6 columns */
+	width: 179px;
+}
+.pricing_five .pricing_column,
+.pricing_five .pricing_column_first { /* 5 columns */
+	width: 191px;
+}
+.pricing_four .pricing_column,
+.pricing_four .pricing_column_first { /* 4 columns */
+	width: 239px;
+}
+.pricing_three .pricing_column,
+.pricing_three .pricing_column_first { /* 3 columns */
+	width: 319px;
+}
+
+/* 3. Small screens styling */
+
+@media only screen and (max-width: 1023px) {
+
+	.pricing_table {
+		width:100%;
+		font-size:11px;
+	}
+		.pricing_table .pricing_column_first,
+		.pricing_table .pricing_column {
+			margin-right:1px;
+		}
+		.pricing_six .pricing_column,
+		.pricing_six .pricing_column_first { /* 6 columns */
+			width: 16.56%;
+		}
+		.pricing_five .pricing_column,
+		.pricing_five .pricing_column_first { /* 5 columns */
+			width: 19.89%;
+		}
+		.pricing_four .pricing_column,
+		.pricing_four .pricing_column_first { /* 4 columns */
+			width: 24.89%;
+		}
+		.pricing_three .pricing_column,
+		.pricing_three .pricing_column_first { /* 3 columns */
+			width: 33.23%;
+		}
+		.pricing_table li.pricing_header1 {
+			font-size: 16px;
+			font-weight:bold;
+		}
+		.pricing_table li.pricing_header2 {
+			font-size: 24px;
+		}
+			.pricing_table li.pricing_header2 span {
+				font-size: 9px;
+			}
+			.pricing_table .pricing_column_first li.pricing_header2 span {
+				font-size:14px;
+			}
+
+}
+
+@media handheld, only screen and (max-width: 767px) {
+
+	.pricing_table {
+		width:100%;
+	}
+		.pricing_table li.pricing_header1 {
+			height:50px;
+			font-size: 18px;
+			line-height:24px;
+		}
+		.pricing_table li.pricing_header2 {
+			height:50px;
+			line-height:30px;
+		}
+		.pricing_table .pricing_column_first {
+			display:none;
+		}
+		.pricing_table .pricing_column {
+			width:48%;
+			margin-bottom:12px;
+		}
+        .pricing_table ul li {
+			height:	44px;
+			padding-top: 6px;
+			line-height:12px;
+       }
+        .pricing_table ul li:before {
+            content:attr(data-table) '';
+            display:block;
+            margin-bottom:10px;
+            font-size:12px;
+            font-weight:bold;
+
+        }
+
+        .pricing_table ul li:after {
+            content:attr(data-description) '';
+            display:block;
+            margin-top:10px;
+            font-size:12px;
+            font-weight:bold;
+
+        }
+
+	.pricing_table .pricing_hover_area .pricing_column:hover {
+
+
+	}
+
+}
+
+
+@media handheld, only screen and (max-width: 380px) {
+
+	.pricing_table .pricing_column {
+		width:100%;
+	}
+	.pricing_table .pricing_column_first,
+	.pricing_table .pricing_column {
+		margin-right:0;
+	}
+
+}
+
+/* 4. Rows styling */
+
+.pricing_table .odd {
+	background-color: #f6f6f6;
+	border-bottom:1px solid #cccccc;
+}
+.pricing_table .even {
+	background-color: #efefef;
+	border-bottom:1px solid #cccccc;
+}
+
+/* 5. Table icons */
+
+.pricing_table .pricing_yes,
+.pricing_table .pricing_no {
+	height:20px;
+	width:100%;
+	float:left;
+}
+.pricing_table .pricing_yes {
+	background:url("../img/yes.png") center top no-repeat;
+	_background:url("../img/ie_yes.gif") center top no-repeat;
+}
+.pricing_table .pricing_no {
+	background:url("../img/no.png") center top no-repeat;
+	_background:url("../img/ie_no.gif") center top no-repeat;
+}
+
+/* 6. Columns footer */
+
+.pricing_table .pricing_footer {
+	width: 100%;
+/*	height: 40px;
+	padding-top: 14px;
+	padding-bottom: 6px;*/
+	float: left;
+	border-top: 1px solid #f9f9f9;
+/*	border-bottom: 2px solid #323232;*/
+	background-color: #e2e2e2;
+	    min-height: 6vh;
+}
+
+
+
+
+/* 7. Buttons */
+
+.pricing_table a.pricing_button {
+	width: 100px;
+/*	height: 21px;*/
+	padding: 7px 0px 0px 0px;
+	display: block;
+	text-align: center;
+	text-decoration:none;
+	font-weight: bold;
+	margin: 0 auto;
+    color: #ffffff;
+
+
+    text-decoration: none;
+    font-weight: bold;
+
+
+
+
+}
+	.pricing_table a.pricing_button:hover {
+/*		background-image: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+		background-image: -webkit-linear-gradient-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+		background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+		background-image: -o-linear-gradient(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2));
+		background-image: -ms-linear-gradient(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2));
+		background-image: no-repeat;
+		border: 1px solid rgba(0, 0, 0, 0.2);*/
+	}
+	.pricing_table a.pricing_button:active {
+/*		background-image: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0));
+		background-image: -webkit-linear-gradient-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+		background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+		background-image: -o-linear-gradient(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0));
+		background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0));
+		background-image: no-repeat;
+		border: 1px solid rgba(0, 0, 0, 0.2);*/
+	}
+
+
+
+
+
+
+/*  _______________________________________
+
+	05 COLORS
+    _______________________________________  */
+
+
+
+.pricing_table .gradient_blue a.pricing_button,
+.pricing_table .gradient_blue li.pricing_header1 {
+	background-color: #00ACEE;
+}
+
+
+
+
+
+

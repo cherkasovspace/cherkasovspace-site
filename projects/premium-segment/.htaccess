@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+Redirect 301 /premium-segment/ps https://proprodazhy.ru/21-oshibka/webinar
+Redirect 301 /premium-segment/ps/ https://proprodazhy.ru/21-oshibka/webinar
+
+Redirect 301 /premium-segment/ps-2 https://proprodazhy.ru/21-oshibka/webinar-2
+Redirect 301 /premium-segment/ps-2/ https://proprodazhy.ru/21-oshibka/webinar-2
+</IfModule>

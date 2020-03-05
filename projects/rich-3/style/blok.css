@@ -1,0 +1,124 @@
+﻿#blok1{
+	background: url(../images/blok1.jpg) no-repeat top center;
+	width: 100%;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#blok2{
+	background: url(../images/blok2.jpg);
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+#blok3{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+#blok4{
+	background: url(../images/blok4.png) no-repeat bottom center;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+#blok5{
+	background: url(../images/txtr1.png);
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#blok5 p{
+	font-size: 23px;
+	line-height: 1.25;
+	color: #000;
+	margin-top: 15px;
+	margin-bottom: 12px;
+}
+
+#blok6{
+	background: url(../images/blok6.png) no-repeat bottom center;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 80px;
+	min-height: 450px;
+}
+
+#blok7{
+	background: url(../images/blok7.png) no-repeat top center;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 80px;
+	height: 400px;
+}
+
+#blok7 p{
+	font-size: 23px;
+	line-height: 1.25;
+	color: #000;
+	margin-top: 15px;
+	margin-bottom: 12px;
+}
+
+#blok8{
+	background: url(../images/blok8.png) no-repeat center center;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	min-height: 250px;
+}
+
+#blok8 p{
+	font-size: 23px;
+	line-height: 1.25;
+	color: #000;
+	margin-top: 15px;
+	margin-bottom: 12px;
+}
+
+#blok9{
+	background: rgba(100,100,100,0.05);
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#blok9 p{
+	font-size: 23px;
+	line-height: 1.25;
+	color: #000;
+	margin-top: 15px;
+	margin-bottom: 12px;
+}
+
+#blok10{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+#blok10 p{
+	text-align: center;
+}
+
+#footer{
+	background: #ccc;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	min-height: 40px;
+	font-size: 16px;
+	line-height:1.2;
+text-align: center;
+color: #323232;
+}
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Redirect 301 /mastergroup/ /mastergroup-2/
+</IfModule>

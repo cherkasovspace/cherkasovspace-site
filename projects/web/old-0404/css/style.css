@@ -1,0 +1,1834 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	overflow: hidden;
+	width: 100%;
+	color: #0E192C;
+}
+
+#wrapper {
+	min-width: auto;
+}
+
+.content {
+	max-width: 1170px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+/* mav (навигация) */
+.nav {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.nav .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	width: 1030px;
+	margin: 11px auto 0;
+}
+
+.nav .logo {
+	flex-shrink: 0;
+}
+
+.nav ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 1000px;
+	justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.nav li {
+	font: 12px 'MontserratBold', sans-serif;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: #70BDD5;
+}
+
+.nav li.active {
+	border-bottom: 2px solid #CC2323;
+}
+
+.nav.fixed {
+	position: fixed;
+	width: 100%;
+	background: #000;
+	/*padding: 20px 0;*/
+	z-index: 10;
+	opacity: 0.8;
+}
+/* The and mav (навигация) */
+
+/* block1 (Шапка) */
+
+.no-webp .block1 {
+	background: url(../images/block1.jpg) center top no-repeat;
+}
+
+.webp .block1 {
+	background: url(../images/block1.webp) center top no-repeat;
+}
+
+.block1 {
+	height: 650px;
+}
+
+.block1 .b {
+	width: 630px;
+	margin: 0 0 0 68px;
+/*	padding-top: 140px;*/
+	padding-top: 67px;
+}
+
+.block1 .b .d {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.block1 .b .d .q {
+	width: 4px;
+	height: 33px;
+	background: #FF1223;
+}
+
+.block1 .b .d p {
+	font: 14px 'MontserratBold', sans-serif;
+	color: #70BDD5;
+	padding: 0 0 0 24px;
+	line-height: 1.42em;
+}
+
+.block1 .b h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	color: #fff;
+	letter-spacing: 5px;
+/*	padding-top: 25px;*/
+	padding-top: 90px;
+}
+
+.block1 .b .p1 {
+	font: 14px 'MontserratBold', sans-serif;
+	color: #70BDD5;
+	letter-spacing: 1px;
+	padding-top: 18px;
+}
+
+.block1 .b .p2 {
+	font: 18px 'MontserratMedium', sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
+	padding-top: 28px;
+	line-height: 1.66em;
+}
+
+.block1 .wp-a {
+	margin-top: 26px;
+}
+
+.block1 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block1 .wp-a .b-a {
+/*	border-radius: 30px;
+	border: 3px solid #FF1223;
+	display: inline-block;
+	margin: 0px auto 3px;*/
+
+
+    background: #FF1223;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 0px auto 3px;
+/*    box-shadow: 0 0 50px #FFE3E5;*/
+
+
+}
+
+.block1 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 14px 40px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.block1 .wp-a .b-a:hover {
+/*	margin: 3px auto 0px;*/
+}
+/* The and block1 (Шапка) */
+
+/* block2 (Что такое не запуск) */
+.block2 {
+
+}
+
+.block2 .block2_vpl {
+	width: 3px;
+	height: 82px;
+	background: #70BDD5;
+	margin: -41px auto 0;
+}
+
+.block2 .f1 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 95px;
+}
+
+.block2 .f1 .b {
+	width: 500px;
+	margin: 0 0 0 70px;
+}
+
+.block2 .f1 .b h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+}
+
+.block2  .b h2 span {
+	color: #FF1223;
+}
+
+.block2 .f1 .b p {
+	font: 16px 'MontserratMedium', sans-serif;
+	letter-spacing: 0.4px;
+	padding-top: 49px;
+	line-height: 1.5em;
+}
+
+.block2 .f1 .i1 {
+	flex-shrink: 0;
+	margin-top: 14px;
+}
+
+/*.block2 .p_fon {
+	font: 122px 'MontserratExtraBold', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 50px rgba(0,0,0,0.1);
+	letter-spacing: 10px;
+	text-align: center;
+	margin-top: -24px;
+}
+*/
+
+.block2 .p_fon {
+	font: 90px 'MontserratExtraBold', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 50px rgba(0,0,0,0.1);
+	letter-spacing: 5px;
+	text-align: left;
+	margin-top: -24px;
+}
+
+.block2 .f2 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: -81px;
+}
+
+.block2 .f2 .b {
+	width: 454px;
+	margin-left: 62px;
+}
+
+.block2 .f2 .b .q {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.block2 .f2 .b .q1 {
+	margin-top: 32px;
+}
+
+.block2 .f2 .b .q2 {
+	    margin-top: 21px;
+}
+
+.block2 .f2 .b .d {
+	width: 23px;
+}
+
+.block2 .f2 .b .d p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	letter-spacing: 1px;
+}
+
+.block2 .f2 .b .d .vpl {
+	width: 3px;
+	height: 30px;
+	background: #70BDD5;
+	margin: 12px auto 0;
+}
+
+.block2 .f2 .b .t {
+	margin-left: 18px;
+}
+
+.block2 .f2 .b .t h3 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.33em;
+}
+
+.block2 .f2 .b .t p {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+/*	padding-top: 24px;*/
+}
+
+.block2 .f3 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 63px;
+}
+
+.block2 .f3 .b1 {
+/*	width: 550px;*/
+	width: 509px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+/*	margin-left: 30px;*/
+	margin-left: 62px;
+}
+
+.block2 .f3 .b1 .d {
+	width: 23px;
+}
+
+.block2 .f3 .b1 .d p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	letter-spacing: 1px;
+}
+
+.block2 .f3 .b1 .d .vpl {
+	width: 3px;
+	height: 30px;
+	background: #70BDD5;
+	margin: 12px auto 0;
+}
+
+.block2 .f3 .b1 .t {
+	margin-left: 18px;
+}
+
+.block2 .f3 .b1 .t h3 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.33em;
+}
+
+.block2 .f3 .b1 .t p {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+/*	padding-top: 24px;*/
+}
+
+.block2 .f3 .b2 {
+	width: 490px;
+	margin-left: 90px;
+}
+
+.block2 .f3 .b2 .pl {
+	width: 82px;
+	height: 3px;
+	background: #70BDD5;
+}
+
+.block2 .f3 .b2 p {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 42px;
+}
+
+.block2 .f3 .b2 p span {
+	font-family: 'MontserratBold', sans-serif;
+}
+
+.block2 .b h2 {
+    font: 50px 'BebasNeueBold', sans-serif;
+    letter-spacing: 5px;
+/*    padding: 0 0 0 70px;*/
+}
+
+/* The and block2 (Что такое не запуск) */
+
+/* block3 (Что такое запуск) */
+.block3 {
+
+}
+
+.block3 hr{
+margin-top: 60px;
+}
+
+.block3 .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+/*	margin-top: 99px;*/
+	margin-top: 60px;
+}
+
+.block3 .b {
+	width: 540px;
+}
+
+.block3 .b h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	/*padding: 0 0 0 70px;*/
+	padding: 0 0 0 32px;
+}
+
+.block3 .b .p1 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding: 50px 0px 0 70px;
+	position: relative;
+}
+
+.block3 .b .d {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 21px 0 0 32px;
+	position: relative;
+}
+
+.block3 .b .d .q {
+	width: 23px;
+}
+
+.block3 .b .d .q p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	letter-spacing: 1px;
+}
+
+.block3 .b .d .q .vpl {
+	width: 3px;
+	height: 30px;
+	background: #70BDD5;
+	margin: 12px auto 0;
+}
+
+.block3 .b .d .t {
+	margin-left: 18px;
+}
+
+.block3 .b .d .t h3 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.33em;
+}
+
+.block3 .b .d .t p {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 24px;
+}
+
+.block3 .b .i1 {
+	margin: 0 -151px 0 129px;
+}
+
+.block3 .b .fon_p {
+	font: 90px 'MontserratExtraBold', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 50px rgba(0,0,0,0.1);
+	letter-spacing: 5px;
+/*	text-align: center;*/
+	margin: -61px 0px -80px -117px;
+}
+
+.block3 .b1 {
+	margin-top: 33px;
+}
+
+.block3 .b2 .d {
+	margin-left: 88px;
+}
+
+.block3 .wp-a {
+	text-align: center;
+	margin-top: 63px;
+}
+
+.block3 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block3 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block3 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block3 .wp-a .b-a:hover {
+/*	margin: 3px auto 0px;*/
+	box-shadow: 0 0 30px #FFE3E5;
+}
+
+.block3 .wp-a .p2{
+	font: 16px 'MontserratMedium', sans-serif;
+    line-height: 1.5em;
+    max-width: 820px;
+    width:100%;
+    padding-top: 73px;
+    margin: 0 auto;
+    margin-bottom: 43px;
+}
+
+.block3 .wp-a .p2 span{
+    color: #FF1223;
+}
+
+
+/* The and block3 (Что такое запуск) */
+
+/* block4 (Алгоритм высокодоходного запуска) */
+.block4 {
+
+}
+
+.block4 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+	padding-top: 135px;
+}
+
+.block4 .p1 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	width: 820px;
+	padding-top: 48px;
+	margin: 0 auto;
+}
+
+.block4 .p1 .arrow {
+	margin-left: 10px;
+}
+
+.block4 .i1 {
+	width: 98%;
+	text-align: center;
+	margin: 58px auto 0;
+}
+
+.block4 .i1 img {
+	box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+.block4 .p2 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	width: 820px;
+	padding-top: 73px;
+	margin: 0 auto;
+}
+
+.block4 .p2 span {
+	color: #FF1223;
+}
+
+.block4 .wp-a {
+	text-align: center;
+	margin-top: 63px;
+}
+
+.block4 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block4 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block4 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block4 .wp-a .b-a:hover {
+/*	margin: 3px auto 0px;*/
+	box-shadow: 0 0 30px #FFE3E5;
+}
+/* The and block4 (Алгоритм высокодоходного запуска) */
+
+/* block5 (Внутренняя кухня) */
+.block5 {
+	padding-bottom: 148px;
+}
+
+.block5 .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 141px;
+}
+
+.block5 .b1 {
+	width: 412px;
+	margin-left: 70px;
+}
+
+.block5 .b1 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	padding-top: 8px;
+}
+
+.block5 .b1 .p1 {
+	font: 205px 'MontserratSemiBold', sans-serif;
+	margin: -23px 0 -171px -57px;
+	color: #DEF0F5;
+}
+
+.block5 .b1 .p2 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+}
+
+.block5 .b2 {
+	width: 517px;
+	margin-left: 97px;
+}
+
+.block5 .b2 h3 {
+	font: 45px 'MontserratBlack', sans-serif;
+	color: #70BDD5;
+	padding-left: 72px;
+}
+
+.block5 .b2 h3 .rub {
+	position: relative;
+}
+
+.block5 .b2 h3 .rub .pl {
+	width: 70%;
+	height: 4px;
+	background: #70BDD5;
+	position: absolute;
+	top: 67%;
+	left: 0;
+}
+
+.block5 .b2 .p1 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.66em;
+	letter-spacing: 2px;
+	padding: 12px 0 0 72px;
+}
+/* The and block5 (Внутренняя кухня) */
+
+/* block6 (Только мясо) */
+.block6 {
+	background: url(../images/block6.jpg) center top no-repeat;
+	color: #fff;
+/*	padding-bottom: 141px;*/
+	padding-bottom: 60px;
+}
+
+.block6 .f1 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+/*	padding-top: 139px;*/
+	padding-top: 60px;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.block6 .f1 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+}
+
+.block6 .f1 h2 span {
+	color: #70BDD5;
+}
+
+.block6 .f1 .pl {
+	width: 150px;
+	height: 3px;
+	background: #70BDD5;
+	margin-left: 53px;
+}
+
+.block6 .f2 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 71px;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.block6 .f2 .b {
+	width: 220px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.block6 .f2 .b .d {
+	width: 24px;
+	margin-top: 2px;
+}
+
+.block6 .f2 .b .d p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.block6 .f2 .b .d .vpl {
+	width: 3px;
+	height: 30px;
+	background: #70BDD5;
+	margin: 18px auto 0;
+}
+
+.block6 .f2 .b .t {
+	margin-left: 18px;
+}
+
+.block6 .f2 .b .t h3 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.5em;
+}
+
+.block6 .f2 .b .t p {
+	font: 18px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 22px;
+}
+
+
+.block6 .wp-a {
+	text-align: center;
+	margin-top: 63px;
+}
+
+.block6 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block6 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+/*	box-shadow: 0 0 50px #FFE3E5;*/
+}
+
+.block6 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block6 .wp-a .b-a:hover {
+/*	margin: 3px auto 0px;*/
+	box-shadow: 0 0 30px #FFE3E5;
+}
+
+/* The and block6 (Только мясо) */
+
+/* block7 (ИК) */
+.block7 {
+
+}
+
+.block7 .p1 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding: 144px 0 0 69px;
+}
+
+.block7 .p1 img {
+	margin-left: 30px;
+}
+
+.block7_i1 {
+	width: 98%;
+	margin: 71px auto 0;
+	text-align: center;
+}
+
+.block7_i1 img {
+	box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+.block7 .p2 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	width: 900px;
+	padding-top: 68px;
+	margin: 0 0 0 69px;
+}
+
+.block7 .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-top: 97px;
+}
+
+.block7 .f .i1 {
+	margin-left: 70px;
+}
+
+.block7 .f .b {
+	width: 290px;
+	margin-left: 100px;
+}
+
+.block7 .f .b h3 {
+	font: 24px 'MontserratBold', sans-serif;
+	line-height: 1.5em;
+	padding-bottom: 25px;
+}
+
+.block7 .f .b .d {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 18px;
+}
+
+.block7 .f .b .d .q {
+	width: 24px;
+	margin-top: 2px;
+}
+
+.block7 .f .b .d .q p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.block7 .f .b .d .q .vpl {
+	width: 3px;
+	height: 20px;
+	background: #70BDD5;
+	margin: 18px auto 0;
+}
+
+.block7 .f .b .d .t {
+	margin-left: 18px;
+}
+
+.block7 .f .b .d .t h4 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.5em;
+}
+
+.block7 .f .b .t p {
+	font: 18px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 3px;
+}
+
+.block7_i2 {
+	width: 98%;
+	margin: 75px auto 0;
+	text-align: center;
+}
+
+.block7_i2 img {
+	box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+.block7 .wp-a {
+	text-align: center;
+	margin-top: 77px;
+}
+
+.block7 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block7 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block7 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block7 .wp-a .b-a:hover {
+/*	margin: 3px auto 0px;*/
+	box-shadow: 0 0 30px #FFE3E5;
+}
+/* The and block7 (ИК) */
+
+/* block8 (Программа) */
+.block8 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+	padding: 40px 0 40px;
+}
+
+.block8 .switch {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	width: 1030px;
+	margin: 0 auto;
+	padding: 40px 0;
+	position: relative;
+	background: url(../images/block8_switch.jpg) center top no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.block8 .switch h4 {
+	font: 36px 'BebasNeueBold', sans-serif;
+	color: #70BDD5;
+	padding-left: 30px;
+	flex-shrink: 0;
+	letter-spacing: 2px;
+}
+
+.block8 .switch p {
+	font: 24px 'MontserratBold', sans-serif;
+	color: #fff;
+	flex-grow: 2;
+	padding-left: 73px;
+	letter-spacing: 1px;
+}
+
+.block8 .switch .plus {
+	flex-shrink: 0;
+	cursor: pointer;
+	margin-left: 44px;
+	margin-right: 60px;
+}
+
+.block8 .switching {
+	width: 1030px;
+	margin: 0 auto;
+	padding-bottom: 42px;
+}
+
+.block8 .switching ul {
+	margin: 37px 88px 0;
+}
+
+.block8 .switching li {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 27px;
+}
+
+.block8 .switching li .il {
+	flex-shrink: 0;
+}
+
+.block8 .switching li p {
+	font: 16px 'MontserratMedium', sans-serif;
+	padding: 0 0 0 34px;
+	letter-spacing: 0.5px;
+	line-height: 1.5em;
+}
+
+.block8 .switching .p {
+	font: 18px 'MontserratMedium', sans-serif;
+	padding: 30px 88px 0;
+	letter-spacing: 0.5px;
+	line-height: 1.5em;
+}
+
+.block8 .switching .i1 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.block8 .switching .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.block8 .switching .f ul {
+	margin: 0 0 0 88px;
+}
+
+.block8 .switching .f .vpl {
+	flex-shrink: 0;
+	margin: 0 1%;
+	width: 5px;
+	height: 187px;
+	background: #70BDD5;
+}
+
+.block8 .switching .f .b {
+	width: 338px;
+}
+
+.block8 .switching .f .b p {
+	font: 16px 'MontserratMedium', sans-serif;
+	letter-spacing: 0.5px;
+	line-height: 2em;
+}
+
+
+
+.block8 .wp-a {
+	text-align: center;
+/*	margin-top: 63px;*/
+	margin-bottom: 30px;
+}
+
+.block8 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block8 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block8 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block8 .wp-a .b-a:hover {
+/*	margin: 3px auto 0px;*/
+	box-shadow: 0 0 30px #FFE3E5;
+}
+
+.block8 .wp-a .p2{
+	font: 16px 'MontserratMedium', sans-serif;
+    line-height: 1.5em;
+    max-width: 820px;
+    width:100%;
+    padding-top: 73px;
+    margin: 0 auto;
+    margin-bottom: 43px;
+}
+
+.block8 .wp-a .p2 span{
+    color: #FF1223;
+}
+
+/* The and block8 (Программа) */
+
+/* block9 (Цена) */
+.block9 {
+	padding-bottom: 110px;
+}
+
+.block9 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+	padding: 130px 0 0 0;
+}
+
+.block9 .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 900px;
+	margin: 70px auto 0;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.block9 .f ul {
+	width: 50%;
+}
+
+.block9 li {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 17px;
+}
+
+.block9 li .il {
+	flex-shrink: 0;
+}
+
+.block9 li p {
+	font: 16px 'MontserratMedium', sans-serif;
+	padding: 0 0 0 34px;
+	letter-spacing: 0.5px;
+	line-height: 1.5em;
+}
+
+.block9 .f .b {
+	width: 40%;
+	text-align: center;
+}
+
+.block9 .b .p1 {
+	font: 40px 'MontserratBold', sans-serif;
+	text-decoration: line-through;
+}
+
+.block9 .b .p2 {
+	color: #D52631;
+	font: 50px 'MontserratBlack', sans-serif;
+	padding-top: 20px;
+}
+
+.block9 .wp-a {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.block9 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block9 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block9 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block9 .wp-a .b-a:hover {
+/*	margin: 3px auto 0px;*/
+	box-shadow: 0 0 30px #FFE3E5;
+}
+/* The and block9 (Цена) */
+
+/* blockf (Футер) */
+
+.top-footer {
+  background-color: #0B1426;
+  padding: 50px 0 50px;
+  color: #bdbdbd;
+}
+.top-footer ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+
+.top-footer h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #bdbdbd;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.top-footer p {
+  font-size: 13px;
+  line-height: 30px;
+  color: #bdbdbd;
+  font-weight: 300;
+  letter-spacing: 1px;
+    font-family: 'Istok Web', sans-serif;
+    text-align:center;
+}
+
+.top-footer li a {
+  font-size: 13px;
+  line-height: 30px;
+  color: #bdbdbd;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: color .3s;
+  font-family: 'Istok Web', sans-serif;
+  display: block;
+}
+
+.top-footer li a:hover {
+  color: #70BDD5;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #1b1b1b;
+  border-top: 1px solid #2c2c2c;
+  padding: 30px 0;
+}
+
+.footer-bottom h5 {
+  font-size: 12px;
+  line-height: 1;
+  color: #888888;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 7px;
+  margin-bottom: 3px;
+}
+
+.footer-bottom h6 {
+  font-size: 11px;
+  line-height: 15px;
+  color: #888888;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.footer-bottom a {
+  color: #28ABE3;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .social-icon ul li, .social-icon ul li:first-child {
+    margin: 15px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .top-footer li a:hover {
+    color: #70BDD5;
+  }
+
+  .footer-bottom a {
+    color: #00adef;
+  }
+}
+
+.top-footer .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+}
+
+.top-footer .fa:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+.top-footer .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.top-footer .fa-telegram {
+  background: #55ACEE;
+  color: white;
+}
+
+.top-footer .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.top-footer .fa-instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: white;
+}
+
+.top-footer .fa-vk {
+  background: #4A76A8;
+  color: white;
+}
+
+
+/* The and blockf (Футер) */
+
+
+.who .row {
+      align-items: center;
+}
+
+.who .card {
+  border:none;
+}
+
+.who .card-block{
+  background: #70BDD5;
+text-align: center;
+}
+
+.who .card-title{
+    margin: 1em;
+    font: 16px 'MontserratMedium', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
+
+
+.who h4{
+    color: #fff;
+}
+
+.who i{
+  font-size: 40px;
+  color:#70BDD5;
+}
+
+.switch-right{
+  text-align:right;
+}
+
+
+@media (max-width: 576px){
+ .switch-right, .switch-left{
+  text-align:center;
+}
+
+.fa-long-arrow-left:before {
+    content: "\f176";
+}
+
+.fa-long-arrow-right:before {
+    content: "\f175";
+}
+
+.frst{
+  display: flex;
+    flex-direction: column-reverse;
+}
+
+
+}
+
+.block15 {
+	padding-bottom: 41px;
+}
+
+
+.block15 h2{
+	font: 50px 'BebasNeueBold', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+/*    padding: 100px 0 40px;*/
+	padding: 60px 0 40px;
+}
+
+.block15 p{
+    font: 16px 'MontserratMedium', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
+
+
+.block15 .service-desc-cont{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+
+.block16 {
+/*    padding-bottom: 141px;*/
+    padding-bottom: 60px;
+}
+
+
+.block16 h2{
+	font: 50px 'BebasNeueBold', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+/*    padding: 100px 0 40px;*/
+    padding: 60px 0 40px;
+}
+
+.block16 p{
+    font: 16px 'MontserratMedium', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
+
+.block16 strong{
+font: 16px 'MontserratBold', sans-serif;
+}
+
+
+
+.block16 .wp-a {
+/*	text-align: center;*/
+margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.block16 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block16 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block16 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block16 .wp-a .b-a:hover {
+/*	margin: 3px auto 0px;*/
+	box-shadow: 0 0 30px #FFE3E5;
+}
+
+
+
+.block17 {
+	padding-bottom: 41px;
+}
+
+
+.block17 h2{
+	font: 50px 'BebasNeueBold', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+/*    padding: 130px 0 40px;*/
+    padding: 60px 0 40px;
+}
+
+.block17 p{
+    font: 16px 'MontserratMedium', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
+
+.block17 strong{
+	font: 16px 'MontserratBold', sans-serif;
+}
+
+
+        .testimonial{
+            border-right: 4px solid #70BDD5;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px 30px 30px 150px;
+            margin: 0 15px 30px 15px;
+            overflow: hidden;
+            position: relative;
+background-color: #fff;
+
+flex: 2;
+        }
+        .testimonial:before{
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: -17px;
+            border-top: 25px solid #70BDD5;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            transform: rotate(45deg);
+        }
+        .testimonial .pic{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+        left: 20px;
+        }
+        .testimonial .pic img{
+            width: 100%;
+            height: auto;
+        }
+        .testimonial .description{
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
+        .testimonial .title{
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #70BDD5;
+            margin: 0;
+        }
+        .testimonial .post{
+            display: inline-block;
+            font-size: 17px;
+            color: #70BDD5;
+            font-style:italic;
+        }
+
+        @media only screen and (max-width: 767px){
+            .testimonial{
+                padding: 20px;
+                text-align: center;
+            }
+            .testimonial .pic{
+                display: block;
+                position: static;
+                margin: 0 auto 15px;
+            }
+        }
+
+
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+          background: #70BDD5 !important;
+        }
+
+        .testimonial strong{
+          font-weight:700;
+        }
+
+.owl-carousel .owl-stage {
+  display: flex;
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+
+
+@keyframes glare {
+	from { right: 120%;}
+	20%, to {right: -45%;}
+}
+
+.b-a p{
+/*    width: 320px;
+    height: 72px;*/
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.b-a{
+position: relative;
+}
+
+/*.b-a p:after{
+	content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform: rotate(17deg);
+    background-color: rgba(255, 255, 255, 0.15);
+    top: 0%;
+    right: -41%;
+    animation: glare 4s ease-in-out infinite;
+}*/
+
+
+/*
+.b-a p:after {
+	content:'';
+  top:0;
+	transform:translateX(100%);
+	width:100%;
+	height:220px;
+	position: absolute;
+	z-index:1;
+left: -10px;
+    opacity: 0.5;
+	animation: slide 4s infinite 1s;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.8)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 );
+}
+
+
+
+@keyframes slide {
+	0% {transform:translateX(-100%);}
+	100% {transform:translateX(100%);}
+}
+*/
+
+
+/*.b-a p:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
+}
+.b-a p:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
+}*/
+
+
+
+
+@-webkit-keyframes ShineAnimation{
+    from {
+        background-repeat:no-repeat;
+        background-image:-webkit-linear-gradient(
+            top left,
+            rgba(255, 255, 255, 0.0) 0%,
+            rgba(255, 255, 255, 0.0) 45%,
+            rgba(255, 255, 255, 0.3) 48%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.3) 52%,
+            rgba(255, 255, 255, 0.0) 57%,
+            rgba(255, 255, 255, 0.0) 100%
+        );
+        background-position:-250px -250px;
+        background-size: 600px 600px
+    }
+    to {
+        background-repeat:no-repeat;
+        background-position:250px 250px;
+    }
+}
+
+
+@keyframes ShineAnimation{
+    from {
+        background-repeat:no-repeat;
+        background-image:-webkit-linear-gradient(
+            top left,
+            rgba(255, 255, 255, 0.0) 0%,
+            rgba(255, 255, 255, 0.0) 45%,
+            rgba(255, 255, 255, 0.3) 48%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0.3) 52%,
+            rgba(255, 255, 255, 0.0) 57%,
+            rgba(255, 255, 255, 0.0) 100%
+        );
+        background-position:-450px -450px;
+        background-size: 600px 600px
+    }
+    to {
+        background-repeat:no-repeat;
+        background-position:450px 450px;
+    }
+}
+
+
+.b-a{
+/*    width:100%; Make sure the animation is over the whole element*/
+
+    animation-name: ShineAnimation;
+    animation-duration: 5s;
+   	animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.12,.89,.98,.47);
+
+    -webkit-animation-name: ShineAnimation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.12,.89,.98,.47);
+}
+
+
+
+
+/*@keyframes slide {
+	0% {transform:translateX(-100%);}
+	100% {transform:translateX(100%);}
+}
+
+
+.b-a :after {
+	content:'';
+	top:0;
+	transform:translateX(100%);
+ width: 45px;
+	height:220px;
+	position: absolute;
+	z-index:1;
+   background-color: rgba(255, 18, 35, 0.5);
+	animation: slide 4s infinite 3s;
+}
+*/
+.table-ticket {
+	width: 100%;
+}

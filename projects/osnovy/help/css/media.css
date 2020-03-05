@@ -1,0 +1,13 @@
+/* block1 (Шапка) */
+@media screen and (max-width: 880px){
+	.block1 ul {
+		width: 96%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.block1 .p1 {
+		font-size: 34px;
+	}
+}
+/* The and block1 (Шапка) */
