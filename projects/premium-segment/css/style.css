@@ -250,6 +250,8 @@ border:none;
 .title {
   padding-bottom: 50px;
   overflow: hidden;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 
@@ -278,8 +280,6 @@ border:none;
   left: 100%;
   margin-left: 15px;
 }
-
-
 
 .title p {
   color: #848484;
