@@ -67,33 +67,20 @@ a:focus, a:hover {
 
 
 .btn-main {
-/*  background: #28ABE3;
-  border: 1px solid #28ABE3;
-  color: #232323;
+  background: #00adef;
+  font-size: calc(0.7em + 1vmin);
+  border:none;
+  color: #fff;
   display: inline-block;
-  font-size: 14px;
-  letter-spacing: 1px;
-  padding: 12px 40px;
+  padding: 20px 40px;
   text-transform: uppercase;
   border-radius: 40px;
-  font-weight: 700;*/
-
-   background: #00adef;
-    font-size: calc(0.7em + 1vmin);
-border:none;
-    color: #fff;
-    display: inline-block;
-
-   padding: 20px 40px;
-    text-transform: uppercase;
-    border-radius: 40px;
-    font-weight: 700;
-    margin:20px;
+  font-weight: 700;
+  margin: 20px 0 20px 0;
 }
 
  @media (max-width: 400px) {
 .btn-main {
-
      padding: 10px;
   }
 }
@@ -703,7 +690,7 @@ margin-bottom: 44px;
 .about-2 .checklist li:before {
   position: absolute;
   margin-right: 12px;
-  margin-left: -45px;
+  margin-left: -37px;
   content: "\f375";
   font-family: "themefisher-font";
   color: #00adef;
@@ -2152,10 +2139,46 @@ form .input {
 form input {
     padding: 15px;
     border-radius: 5px;
-    text-align: center;
-    width: 100%;
     margin-bottom: 10px;
+    border: 1px solid #c3c3c3;
+    font-family: sans-serif;
 }
+
+form input[type=text], form input[type=email], form input[type=textarea] {
+    width: 100%;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+
+.form-check {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-check input {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.form-check-label{
+  vertical-align: middle;
+}
+
 
 form button {
     display: block;
@@ -2272,7 +2295,7 @@ form .label-chek {
   .panel-default>.panel-heading+.panel-collapse>.panel-body p {
     color: #848484;
     font-size: 18px;
-    padding: 10px 25px;
+    padding: 10px;
   }
 
 
@@ -2285,7 +2308,7 @@ form .label-chek {
 .accordion-section .accordion-holder .panel-default .panel-heading h4 a:before {
     content: '\f106';
     position: absolute;
-    right: 34px;
+    right: 29px;
     font-family: FontAwesome;
   }
 
@@ -2294,9 +2317,9 @@ form .label-chek {
     font-weight: bold;
     font-size: 20px;
     display: block;
-    background: #ddd;
+    background: #f3f3f3;
     color: #232323;
-    padding: 20px 30px;
+    padding: 20px 30px 20px 20px;
   }
 
 .accordion-section h3{
@@ -2997,7 +3020,7 @@ background: #fee700;
 .hero-area .checklist li:before {
   position: absolute;
   margin-right: 12px;
-  margin-left: -45px;
+  margin-left: -37px;
   content: "\f375";
   font-family: "themefisher-font";
   color: #00adef;
@@ -3005,4 +3028,11 @@ background: #fee700;
   border-radius: 50%;
   padding: 2px 8px;
   font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px){
+.call-to-action h2 {
+    font-size: calc(1em + 2vmin);
+}
 }

@@ -594,8 +594,6 @@ opacity: 0.8;
 }
 
 .hero-area .block .btn-main {
-/*  margin-right: 8px;*/
-opacity: .8;
 }
 
 .hero-area .block .btn-main:hover {
@@ -2363,9 +2361,44 @@ form .input {
 form input {
     padding: 15px;
     border-radius: 5px;
-    width: 100%;
     margin-bottom: 10px;
     border: 1px solid #c3c3c3;
+    font-family: sans-serif;
+}
+
+form input[type=text], form input[type=email], form input[type=textarea] {
+    width: 100%;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+
+.form-check {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-check input {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.form-check-label{
+  vertical-align: middle;
 }
 
 form button {
