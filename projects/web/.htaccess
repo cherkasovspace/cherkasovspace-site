@@ -4,8 +4,6 @@ AddCharset utf-8 *
 
 RewriteEngine On
 
-
-
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
 
@@ -18,18 +16,6 @@ RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^ %{REQUEST_URI}.php [NC,L]
-
-
-
-#RewriteRule ^web-2$ index-2.php [QSA,L,NC]
-#RewriteRule ^web-3$ index-3.php [QSA,L,NC]
-
-
-
-Redirect 301 /web/2603 https://proprodazhy.ru/web/1/
-Redirect 301 /web/2603-2 https://proprodazhy.ru/web/2/
-Redirect 301 /web/2603-3 https://proprodazhy.ru/web/3/
-
 
 </IfModule>
 
