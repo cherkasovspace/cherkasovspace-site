@@ -2472,9 +2472,8 @@ position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
 }
 
 .col-8 {
@@ -2521,6 +2520,7 @@ position: relative;
 .how-it-works p {
 font-weight:700;
     color: #232323;
+    margin: 0;
 }
 
 .how-it-works.n-row {
@@ -2633,7 +2633,7 @@ font-weight:700;
   }
 
 
-.empty{
+.empty {
       padding-bottom: 20px;
 }
 
@@ -2642,15 +2642,23 @@ font-weight:700;
     margin:0 auto;
 }
 
+
+@media(max-width:576px) {
+  .empty {
+    padding-bottom: 50px;
+  }
+
+  .bonuses img {
+    max-width: 30%;
+  }
+
+}
+
 .bonuses h3{
       line-height: 1.5;
 }
 
 .bonuses p{color: #333;}
-
-
-
-
 
 .open-up {
   padding-left: 30px;
@@ -2673,7 +2681,7 @@ font-weight:700;
 
 }
 
-.number-up{
+.number-up {
   padding-left: 30px;
   font-size: 16px;
   list-style: decimal;
@@ -2684,118 +2692,96 @@ font-weight:700;
   margin: 10px;
 }
 
-
-
-
-
-
-
-
-.btn-open{
-    padding: 9px 0px;
-    border-bottom-color: #eb8c02;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    color: #eb8c02;
-    background: none;
-    font-weight: 700;
-        border-radius: 0;
-        font-size: 1.2em;
+.btn-open {
+  padding: 9px 0px 2px 0;
+  border-bottom-color: #eb8c02;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  color: #eb8c02;
+  background: none;
+  font-weight: 700;
+  border-radius: 0;
+  font-size: 1.2em;
 }
 
 .btn-open:hover, .btn-open:active {
-border-bottom:none;
-    border-bottom-color: #f9f9f9;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-
-    color: #eb8c02;
-    background: none;
-    font-weight: 700;
-        border-radius: 0;
-        box-shadow:none;
-
+  border-bottom:none;
+  border-bottom-color: #f9f9f9;
+  border-bottom-style: dotted;
+  border-bottom-width: 2px;
+  color: #eb8c02;
+  background: none;
+  font-weight: 700;
+  border-radius: 0;
+  box-shadow:none;
 }
 
-.btn-open:focus{
-    border-bottom-color: #eb8c02;
-    border-bottom-style: dotted;
-    border-bottom-width: 2px;
-    color: #eb8c02;
-    background: none;
-    font-weight: 700;
-        border-radius: 0;
-        box-shadow:none;
+.btn-open:focus {
+  border-bottom-color: #eb8c02;
+  border-bottom-style: dotted;
+  border-bottom-width: 2px;
+  color: #eb8c02;
+  background: none;
+  font-weight: 700;
+  border-radius: 0;
+  box-shadow:none;
+}
+.btn-open span {
+  font-weight: 400;
 }
 
-
-
-.price-divider{
+.price-divider {
   border: 1px solid #dedede;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.price-name{
+.price-name {
   font-weight:700;
   letter-spacing:2px;
   display: block;
   text-transform: uppercase;
-     text-align: center;
+  text-align: center;
 }
 
-.price-number{
+.price-number {
   font-weight:700;
-      font-size: 36px;
-      color: #eb8c02;
-        display: block;
-   text-transform: uppercase;
-   text-align: center;
+  font-size: 36px;
+  color: #eb8c02;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.price-block{margin-bottom:35px;}
-
-
-
-
+.price-block {margin-bottom:35px;}
 
 .req {
-
-    position: relative;
-
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), url(../images/call-to-action.jpg);
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), url(../images/call-to-action.jpg);
   padding: 100px 0;
   background-size: cover;
   background-position: 100%;
   color: #fff;
 }
 
+.usl {padding: 50px 0 0 0;}
 
-.usl{
-padding: 50px 0 0 0;
-}
-
-
-
-.pricing-item .btn-main{
-   background: #fee700;
+.pricing-item .btn-main {
+background: #fee700;
 background: -moz-linear-gradient(left, #fee700 0%, #eb8c02 100%);
 background: -webkit-linear-gradient(left, #fee700 0%,#eb8c02 100%);
 background: linear-gradient(to right, #fee700 0%,#eb8c02 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee700', endColorstr='#eb8c02',GradientType=1 );
-
-    font-size: calc(0.8em + 1vmin);
-    text-decoration: none;
-    padding: 18px;
-    display: inline-block;
-    margin: 10px auto;
-    border-radius: 15px;
-
-    font-weight: 700;
-    border-radius: 40px;
-    text-transform: uppercase;
+font-size: calc(0.8em + 1vmin);
+text-decoration: none;
+padding: 18px;
+display: inline-block;
+margin: 10px auto;
+border-radius: 15px;
+font-weight: 700;
+border-radius: 40px;
+text-transform: uppercase;
 }
-
-
-
 
 .flip-clock-wrapper {
   display: -webkit-box;
@@ -2946,32 +2932,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee700', end
   }
 }
 
-
 .clock{
-background: #fee700;
-    background: -moz-linear-gradient(left, #fee700 0%, #eb8c02 100%);
-    background: -webkit-linear-gradient(left, #fee700 0%,#eb8c02 100%);
-    background: linear-gradient(to right, #fee700 0%,#eb8c02 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee700', endColorstr='#eb8c02',GradientType=1 );
+  background: #fee700;
+  background: -moz-linear-gradient(left, #fee700 0%, #eb8c02 100%);
+  background: -webkit-linear-gradient(left, #fee700 0%,#eb8c02 100%);
+  background: linear-gradient(to right, #fee700 0%,#eb8c02 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee700', endColorstr='#eb8c02',GradientType=1 );
 }
 
 .partic p{color:#333;font-size: 1.8em;}
 
-
-
-
-
-
-    .pricing-item {
-  justify-content: space-between;
+.pricing-item {
+/*  justify-content: space-between;*/
   flex-direction: column;
-  height: 550px;
   display: flex;
-
-
 }
-    .pricing-item .btn-main{
 
-  justify-content: flex-end;
+.pricing-item .btn-main {
+  justify-content: center;
   display: flex;
+  width: 100%;
+}
+
+.center iframe {
+  width: 100%;
+  max-width: 675px;
+}
+
+.row-eq-height{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-eq-height > [class*="col-"]{
+display: flex;
+}
+
+.btn-ctr {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1 0 auto;
 }

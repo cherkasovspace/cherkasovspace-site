@@ -1386,11 +1386,9 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), url
 
 .testimonial .item .client-thumb img {
   display: inline-block;
-/*  border-radius: 100%;*/
-/*  width: 150px;*/
   height: auto;
-      box-shadow: 0 5px 45px 0 rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: 0 5px 45px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.08);
 }
 
 /*=================================================================
@@ -2419,4 +2417,18 @@ form .label-chek {
 .fa-vk {
   background: #4A76A8;
   color: white;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 50px;
+}
+
+.slick-prev, .slick-next {
+    width: auto;
+    height: auto;
+    margin: 0 -7px;
+  }
+
+  .lb-data .lb-number {
+    display: none !important;
 }
