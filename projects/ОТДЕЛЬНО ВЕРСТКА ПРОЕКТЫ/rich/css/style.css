@@ -1191,6 +1191,7 @@ color: #e4be7c;
   letter-spacing: 1px;
   font-family: 'Istok Web', sans-serif;
   text-align:center;
+  margin: 0 0 10px;
 }
 
 .top-footer li a {
@@ -1205,7 +1206,7 @@ color: #e4be7c;
 }
 
 .top-footer li a:hover {
-  color: #00ACEE;
+  color: #e4be7c;
 }
 
 .footer-bottom {
