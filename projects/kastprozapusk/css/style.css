@@ -1,0 +1,1184 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	overflow: hidden;
+	width: 100%;
+	color: #0E192C;
+}
+
+#wrapper {
+	min-width: auto;
+}
+
+.content {
+	max-width: 1170px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+/* mav (навигация) */
+.nav {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.nav .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	width: 1030px;
+	margin: 11px auto 0;
+}
+
+.nav .logo {
+	flex-shrink: 0;
+}
+
+.nav ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 1000px;
+	justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.nav li {
+	font: 12px 'MontserratBold', sans-serif;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: #70BDD5;
+}
+
+.nav li.active {
+	border-bottom: 2px solid #CC2323;
+}
+
+.nav.fixed {
+	position: fixed;
+	width: 100%;
+	background: #000;
+	/*padding: 20px 0;*/
+	z-index: 10;
+	opacity: 0.8;
+}
+/* The and mav (навигация) */
+
+/* block1 (Шапка) */
+.block1 {
+	background: url(../images/block1.jpg) center top no-repeat;
+	height: 650px;
+}
+
+.block1 .b {
+	width: 630px;
+	margin: 0 0 0 68px;
+	padding-top: 140px;
+}
+
+.block1 .b .d {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.block1 .b .d .q {
+	width: 4px;
+	height: 33px;
+	background: #FF1223;
+}
+
+.block1 .b .d p {
+	font: 14px 'MontserratBold', sans-serif;
+	color: #70BDD5;
+	padding: 0 0 0 24px;
+	line-height: 1.42em;
+}
+
+.block1 .b h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	color: #fff;
+	letter-spacing: 5px;
+	padding-top: 25px;
+}
+
+.block1 .b .p1 {
+	font: 14px 'MontserratBold', sans-serif;
+	color: #70BDD5;
+	letter-spacing: 1px;
+	padding-top: 18px;
+}
+
+.block1 .b .p2 {
+	font: 18px 'MontserratMedium', sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
+	padding-top: 28px;
+	line-height: 1.66em;
+}
+
+.block1 .wp-a {
+	margin-top: 26px;
+}
+
+.block1 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block1 .wp-a .b-a {
+	border-radius: 30px;
+	border: 3px solid #FF1223;
+	display: inline-block;
+	margin: 0px auto 3px;
+}
+
+.block1 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 14px 40px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.block1 .wp-a .b-a:hover {
+	margin: 3px auto 0px;
+}
+/* The and block1 (Шапка) */
+
+/* block2 (Что такое не запуск) */
+.block2 {
+	
+}
+
+.block2 .block2_vpl {
+	width: 3px;
+	height: 82px;
+	background: #70BDD5;
+	margin: -41px auto 0;
+}
+
+.block2 .f1 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 95px;
+}
+
+.block2 .f1 .b {
+	width: 500px;
+	margin: 0 0 0 70px;
+}
+
+.block2 .f1 .b h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+}
+
+.block2  .b h2 span {
+	color: #FF1223;
+}
+
+.block2 .f1 .b p {
+	font: 16px 'MontserratMedium', sans-serif;
+	letter-spacing: 0.4px;
+	padding-top: 49px;
+	line-height: 1.5em;
+}
+
+.block2 .f1 .i1 {
+	flex-shrink: 0;
+	margin-top: 14px;
+}
+
+.block2 .p_fon {
+	font: 122px 'MontserratExtraBold', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 50px rgba(0,0,0,0.1);
+	letter-spacing: 10px;
+	text-align: center;
+	margin-top: -24px;
+}
+
+.block2 .f2 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: -81px;
+}
+
+.block2 .f2 .b {
+	width: 454px;
+	margin-left: 62px;
+}
+
+.block2 .f2 .b .q {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.block2 .f2 .b .q1 {
+	margin-top: 32px;
+}
+
+.block2 .f2 .b .q2 {
+	margin-top: 51px;
+}
+
+.block2 .f2 .b .d {
+	width: 23px;
+}
+
+.block2 .f2 .b .d p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	letter-spacing: 1px;
+}
+
+.block2 .f2 .b .d .vpl {
+	width: 3px;
+	height: 30px;
+	background: #70BDD5;
+	margin: 12px auto 0;
+}
+
+.block2 .f2 .b .t {
+	margin-left: 18px;
+}
+
+.block2 .f2 .b .t h3 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.33em;
+}
+
+.block2 .f2 .b .t p {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 24px;
+}
+
+.block2 .f3 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 63px;
+}
+
+.block2 .f3 .b1 {
+	width: 550px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-left: 30px;
+}
+
+.block2 .f3 .b1 .d {
+	width: 23px;
+}
+
+.block2 .f3 .b1 .d p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	letter-spacing: 1px;
+}
+
+.block2 .f3 .b1 .d .vpl {
+	width: 3px;
+	height: 30px;
+	background: #70BDD5;
+	margin: 12px auto 0;
+}
+
+.block2 .f3 .b1 .t {
+	margin-left: 18px;
+}
+
+.block2 .f3 .b1 .t h3 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.33em;
+}
+
+.block2 .f3 .b1 .t p {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 24px;
+}
+
+.block2 .f3 .b2 {
+	width: 490px;
+	margin-left: 90px;
+}
+
+.block2 .f3 .b2 .pl {
+	width: 82px;
+	height: 3px;
+	background: #70BDD5;
+}
+
+.block2 .f3 .b2 p {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 42px;
+}
+
+.block2 .f3 .b2 p span {
+	font-family: 'MontserratBold', sans-serif;
+}
+/* The and block2 (Что такое не запуск) */
+
+/* block3 (Что такое запуск) */
+.block3 {
+	
+}
+
+.block3 .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 99px;
+}
+
+.block3 .b {
+	width: 540px;
+}
+
+.block3 .b h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	padding: 0 0 0 70px;
+}
+
+.block3 .b .p1 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding: 50px 0px 0 70px;
+	position: relative;
+}
+
+.block3 .b .d {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 59px 0 0 32px;
+	position: relative;
+}
+
+.block3 .b .d .q {
+	width: 23px;
+}
+
+.block3 .b .d .q p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	letter-spacing: 1px;
+}
+
+.block3 .b .d .q .vpl {
+	width: 3px;
+	height: 30px;
+	background: #70BDD5;
+	margin: 12px auto 0;
+}
+
+.block3 .b .d .t {
+	margin-left: 18px;
+}
+
+.block3 .b .d .t h3 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.33em;
+}
+
+.block3 .b .d .t p {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 24px;
+}
+
+.block3 .b .i1 {
+	margin: 0 -151px 0 129px;
+}
+
+.block3 .b .fon_p {
+	font: 122px 'MontserratExtraBold', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 50px rgba(0,0,0,0.1);
+	letter-spacing: 10px;
+	text-align: center;
+	margin: -61px 0px -80px -117px;
+}
+
+.block3 .b1 {
+	margin-top: 33px;
+}
+
+.block3 .b2 .d {
+	margin-left: 88px;
+}
+
+.block3 .wp-a {
+	text-align: center;
+	margin-top: 63px;
+}
+
+.block3 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block3 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block3 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block3 .wp-a .b-a:hover {
+	margin: 3px auto 0px;
+	box-shadow: 0 0 30px #FFE3E5;
+}
+/* The and block3 (Что такое запуск) */
+
+/* block4 (Алгоритм высокодоходного запуска) */
+.block4 {
+	
+}
+
+.block4 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+	padding-top: 135px;
+}
+
+.block4 .p1 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	width: 820px;
+	padding-top: 48px;
+	margin: 0 auto;
+}
+
+.block4 .p1 .arrow {
+	margin-left: 10px;
+}
+
+.block4 .i1 {
+	width: 98%;
+	text-align: center;
+	margin: 58px auto 0;
+}
+
+.block4 .i1 img {
+	box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+.block4 .p2 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	width: 820px;
+	padding-top: 73px;
+	margin: 0 auto;
+}
+
+.block4 .p2 span {
+	color: #FF1223;
+}
+
+.block4 .wp-a {
+	text-align: center;
+	margin-top: 63px;
+}
+
+.block4 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block4 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block4 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block4 .wp-a .b-a:hover {
+	margin: 3px auto 0px;
+	box-shadow: 0 0 30px #FFE3E5;
+}
+/* The and block4 (Алгоритм высокодоходного запуска) */
+
+/* block5 (Внутренняя кухня) */
+.block5 {
+	padding-bottom: 148px;
+}
+
+.block5 .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 141px;
+}
+
+.block5 .b1 {
+	width: 412px;
+	margin-left: 70px;
+}
+
+.block5 .b1 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	padding-top: 8px;
+}
+
+.block5 .b1 .p1 {
+	font: 205px 'MontserratSemiBold', sans-serif;
+	margin: -23px 0 -171px -57px;
+	color: #DEF0F5;
+}
+
+.block5 .b1 .p2 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+}
+
+.block5 .b2 {
+	width: 517px;
+	margin-left: 97px;
+}
+
+.block5 .b2 h3 {
+	font: 45px 'MontserratBlack', sans-serif;
+	color: #70BDD5;
+	padding-left: 72px;
+}
+
+.block5 .b2 h3 .rub {
+	position: relative;
+}
+
+.block5 .b2 h3 .rub .pl {
+	width: 70%;
+	height: 4px;
+	background: #70BDD5;
+	position: absolute;
+	top: 67%;
+	left: 0;
+}
+
+.block5 .b2 .p1 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.66em;
+	letter-spacing: 2px;
+	padding: 12px 0 0 72px;
+}
+/* The and block5 (Внутренняя кухня) */
+
+/* block6 (Только мясо) */
+.block6 {
+	background: url(../images/block6.jpg) center top no-repeat;
+	color: #fff;
+	padding-bottom: 141px;
+}
+
+.block6 .f1 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	padding-top: 139px;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.block6 .f1 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+}
+
+.block6 .f1 h2 span {
+	color: #70BDD5;
+}
+
+.block6 .f1 .pl {
+	width: 150px;
+	height: 3px;
+	background: #70BDD5;
+	margin-left: 53px;
+}
+
+.block6 .f2 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 71px;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.block6 .f2 .b {
+	width: 220px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.block6 .f2 .b .d {
+	width: 24px;
+	margin-top: 2px;
+}
+
+.block6 .f2 .b .d p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.block6 .f2 .b .d .vpl {
+	width: 3px;
+	height: 30px;
+	background: #70BDD5;
+	margin: 18px auto 0;
+}
+
+.block6 .f2 .b .t {
+	margin-left: 18px;
+}
+
+.block6 .f2 .b .t h3 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.5em;
+}
+
+.block6 .f2 .b .t p {
+	font: 18px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 22px;
+}
+/* The and block6 (Только мясо) */
+
+/* block7 (ИК) */
+.block7 {
+	
+}
+
+.block7 .p1 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding: 144px 0 0 69px;
+}
+
+.block7 .p1 img {
+	margin-left: 30px;
+}
+
+.block7_i1 {
+	width: 98%;
+	margin: 71px auto 0;
+	text-align: center;
+}
+
+.block7_i1 img {
+	box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+.block7 .p2 {
+	font: 16px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	width: 900px;
+	padding-top: 68px;
+	margin: 0 0 0 69px;
+}
+
+.block7 .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-top: 97px;
+}
+
+.block7 .f .i1 {
+	margin-left: 70px;
+}
+
+.block7 .f .b {
+	width: 290px;
+	margin-left: 100px;
+}
+
+.block7 .f .b h3 {
+	font: 24px 'MontserratBold', sans-serif;
+	line-height: 1.5em;
+	padding-bottom: 25px;
+}
+
+.block7 .f .b .d {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 18px;
+}
+
+.block7 .f .b .d .q {
+	width: 24px;
+	margin-top: 2px;
+}
+
+.block7 .f .b .d .q p {
+	font: 16px 'MontserratExtraBold', sans-serif;
+	color: #70BDD5;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.block7 .f .b .d .q .vpl {
+	width: 3px;
+	height: 20px;
+	background: #70BDD5;
+	margin: 18px auto 0;
+}
+
+.block7 .f .b .d .t {
+	margin-left: 18px;
+}
+
+.block7 .f .b .d .t h4 {
+	font: 18px 'MontserratBold', sans-serif;
+	line-height: 1.5em;
+}
+
+.block7 .f .b .t p {
+	font: 18px 'MontserratMedium', sans-serif;
+	line-height: 1.5em;
+	padding-top: 3px;
+}
+
+.block7_i2 {
+	width: 98%;
+	margin: 75px auto 0;
+	text-align: center;
+}
+
+.block7_i2 img {
+	box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+
+.block7 .wp-a {
+	text-align: center;
+	margin-top: 77px;
+}
+
+.block7 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block7 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block7 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block7 .wp-a .b-a:hover {
+	margin: 3px auto 0px;
+	box-shadow: 0 0 30px #FFE3E5;
+}
+/* The and block7 (ИК) */
+
+/* block8 (Программа) */
+.block8 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+	padding: 130px 0 40px;
+}
+
+.block8 .switch {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	width: 1030px;
+	margin: 0 auto;
+	padding: 40px 0;
+	position: relative;
+	background: url(../images/block8_switch.jpg) center top no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.block8 .switch h4 {
+	font: 36px 'BebasNeueBold', sans-serif;
+	color: #70BDD5;
+	padding-left: 30px;
+	flex-shrink: 0;
+	letter-spacing: 2px;
+}
+
+.block8 .switch p {
+	font: 24px 'MontserratBold', sans-serif;
+	color: #fff;
+	flex-grow: 2;
+	padding-left: 73px;
+	letter-spacing: 1px;
+}
+
+.block8 .switch .plus {
+	flex-shrink: 0;
+	cursor: pointer;
+	margin-left: 44px;
+	margin-right: 60px;
+}
+
+.block8 .switching {
+	width: 1030px;
+	margin: 0 auto;
+	padding-bottom: 42px;
+}
+
+.block8 .switching ul {
+	margin: 37px 88px 0;
+}
+
+.block8 .switching li {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 27px;
+}
+
+.block8 .switching li .il {
+	flex-shrink: 0;
+}
+
+.block8 .switching li p {
+	font: 16px 'MontserratMedium', sans-serif;
+	padding: 0 0 0 34px;
+	letter-spacing: 0.5px;
+	line-height: 1.5em;
+}
+
+.block8 .switching .p {
+	font: 18px 'MontserratMedium', sans-serif;
+	padding: 30px 88px 0;
+	letter-spacing: 0.5px;
+	line-height: 1.5em;
+}
+
+.block8 .switching .i1 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.block8 .switching .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.block8 .switching .f ul {
+	margin: 0 0 0 88px;
+}
+
+.block8 .switching .f .vpl {
+	flex-shrink: 0;
+	margin: 0 1%;
+	width: 5px;
+	height: 187px;
+	background: #70BDD5;
+}
+
+.block8 .switching .f .b {
+	width: 338px;
+}
+
+.block8 .switching .f .b p {
+	font: 16px 'MontserratMedium', sans-serif;
+	letter-spacing: 0.5px;
+	line-height: 2em;
+}
+/* The and block8 (Программа) */
+
+/* block9 (Цена) */
+.block9 {
+	padding-bottom: 110px;
+}
+
+.block9 h2 {
+	font: 50px 'BebasNeueBold', sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+	padding: 130px 0 0 0;
+}
+
+.block9 .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 900px;
+	margin: 70px auto 0;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.block9 .f ul {
+	width: 50%;
+}
+
+.block9 li {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 17px;
+}
+
+.block9 li .il {
+	flex-shrink: 0;
+}
+
+.block9 li p {
+	font: 16px 'MontserratMedium', sans-serif;
+	padding: 0 0 0 34px;
+	letter-spacing: 0.5px;
+	line-height: 1.5em;
+}
+
+.block9 .f .b {
+	width: 40%;
+	text-align: center;
+}
+
+.block9 .b .p1 {
+	font: 40px 'MontserratBold', sans-serif;
+	text-decoration: line-through;
+}
+
+.block9 .b .p2 {
+	color: #D52631;
+	font: 50px 'MontserratBlack', sans-serif;
+	padding-top: 20px;
+}
+
+.block9 .wp-a {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.block9 .wp-a a {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.block9 .wp-a .b-a {
+	background: #FF1223;
+	border-radius: 30px;
+	display: inline-block;
+	margin: 0px auto 3px;
+	box-shadow: 0 0 50px #FFE3E5;
+}
+
+.block9 .wp-a .b-a p {
+	font: 14px "MontserratSemiBold", sans-serif;
+	padding: 15px 50px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.block9 .wp-a .b-a:hover {
+	margin: 3px auto 0px;
+	box-shadow: 0 0 30px #FFE3E5;
+}
+/* The and block9 (Цена) */
+
+/* blockf (Футер) */
+.blockf {
+	background: #0B1426;
+	padding-bottom: 58px;
+}
+
+.blockf p {
+	font: 14px 'Montserrat', sans-serif;
+	line-height: 1.22em;
+	color: #fff;
+}
+
+.blockf .p1 {
+	text-align: center;
+	padding: 47px 23% 0;
+}
+
+.blockf .f {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.blockf .b1 {
+	width: 770px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.blockf .b1-b {
+	width: 45%;
+	margin-top: 30px;
+}
+
+.blockf .b1-b:nth-child(2n) p {
+	text-align: center;
+}
+
+.blockf .b2 {
+	width: 302px;
+	margin-top: 37px;
+}
+
+.blockf .b2 p {
+	text-align: right;
+	padding-top: 8px;
+}
+
+.blockf .b2 p a {
+	color: #fff;
+}
+
+.blockf .soc {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 14px;
+}
+/* The and blockf (Футер) */
