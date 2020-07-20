@@ -326,6 +326,10 @@ $('#portfolio_filters .active').trigger( "click" );
 
 })(jQuery);
 
-$('.cert').magnificPopup({
-  type: 'image'
+
+$(document).ready(function() {
+    $('.cert').magnificPopup({
+      type: 'image'
+    });
 });
+
