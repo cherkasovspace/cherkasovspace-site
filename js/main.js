@@ -325,3 +325,7 @@ $('#portfolio_filters .active').trigger( "click" );
     });
 
 })(jQuery);
+
+$('.cert').magnificPopup({
+  type: 'image'
+});
