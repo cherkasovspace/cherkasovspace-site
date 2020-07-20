@@ -328,8 +328,6 @@ $('#portfolio_filters .active').trigger( "click" );
 
 
 $(document).ready(function() {
-    $('.cert').magnificPopup({
-      type: 'image'
-    });
+  $('.cert').magnificPopup({type:'image'});
 });
 
