@@ -303,48 +303,14 @@ $('#portfolio_filters .active').trigger( "click" );
             },
         });
 
-        $('.gallery').each(function() {
+        $('.gallery').each(function() { // the containers for all your galleries
             $(this).magnificPopup({
-                delegate: 'a',
+                delegate: 'a', // the selector for gallery item
                 type: 'image',
                 gallery: {
                 enabled:true
                 }
             });
-        });
-
-        function customAjaxScroll() {
-            var windowWidth = $(window).width();
-            if (windowWidth > 991) {
-                // Custom Ajax Page Scroll
-                $("#ajax-page").mCustomScrollbar({
-                    scrollInertia: 8,
-                    documentTouchScroll: false
-                });
-            } else {
-                $("#ajax-page").mCustomScrollbar('destroy');
-            }
-        }
-
-        jQuery(document).ready(function($){
-
-            // Ajax Loaded Page Scroll
-            customAjaxScroll();
-
-            $('.portfolio-page-carousel').owlCarousel({
-                smartSpeed:1200,
-                items: 1,
-                loop: true,
-                dots: true,
-                nav: true,
-                navText: false,
-                margin: 10
-            });
-
-        });
-
-        jQuery(window).on('resize', function() {
-            customAjaxScroll();
         });
 
         $('.ajax-page-load-link').magnificPopup({
