@@ -4,3 +4,7 @@ AddCharset utf-8 *
 CharsetSourceEnc utf-8
 CharsetDefault utf-8
 </IfModule>
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} index\.php
+RewriteRule ^(.*)index\.php$ /$1/ [R=301,L]

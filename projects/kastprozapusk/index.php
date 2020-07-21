@@ -13,7 +13,7 @@
 		<meta name="description" content="Внутренняя кухня: PRO запуски на миллионы" />
 		<link rel="image_src" href="https://proprodazhy.ru/images/logo.jpg" />
 
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
         <link type="text/css" rel="stylesheet" href="css/modal.css" />
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -23,20 +23,11 @@
 		<script src="js/switch.js" type="text/javascript"></script>
 		<script src="js/jquery-func.js" type="text/javascript"></script>
         <script src="js/modal.js" type="text/javascript"></script>
-		<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5JN8TK7');</script>
-<!-- End Google Tag Manager -->
+
 		<title>Внутренняя кухня: PRO запуски на миллионы</title>
 	</head>
 	<body>
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JN8TK7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 		<div id="wrapper">
 
 									<!-- nav (Навигация) -->
@@ -409,7 +400,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</li>
 						</ul>
 					</div>
-					
+
 					<div class="switch">
 						<h4>2 Модуль</h4>
 						<p>Трансформация личности автора</p>
@@ -463,7 +454,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</li>
 						</ul>
 					</div>
-					
+
 					<div class="switch">
 						<h4>3 Модуль</h4>
 						<p>Эволюция и путь клиента</p>
@@ -501,7 +492,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</li>
 						</ul>
 					</div>
-					
+
 					<div class="switch">
 						<h4>4 Модуль</h4>
 						<p>Подготовка к запуску</p>
@@ -540,7 +531,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</li>
 						</ul>
 					</div>
-					
+
 					<div class="switch">
 						<h4>5 Модуль</h4>
 						<p>Сценарий запуска</p>
@@ -598,7 +589,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<p class="p">Изучив модуль, вы составите по нашим готовым стратегиям свой сценарий запуска, в котором будут учтены все нюансы и мелочи. Итоговый сценарий запуска выглядит примерно так (а наличие сценария — уже половина успеха):</p>
 						<div class="i1"><img src="images/block8_switching_img1.jpg" alt=""></div>
 					</div>
-					
+
 					<div class="switch">
 						<h4>6 Модуль</h4>
 						<p>Воронка продуктов</p>
@@ -656,7 +647,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>
 					</div>
 
-					
+
 					<div class="switch">
 
 						<h4>7 Модуль</h4>
@@ -695,7 +686,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</li>
 						</ul>
 					</div>
-					
+
 					<div class="switch">
 						<h4>8 Модуль</h4>
 						<p>Контент-стратегии</p>
@@ -771,7 +762,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</ul>
 						</ul>
 					</div>
-					
+
 					<div class="switch">
 						<h4>9 Модуль</h4>
 						<p>Технология продаж на вебинарах</p>
@@ -829,7 +820,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</li>
 						</ul>
 					</div>
-					
+
 					<div class="switch">
 						<h4>10 Модуль</h4>
 						<p>Привлечение трафика</p>
@@ -871,7 +862,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</li>
 						</ul>
 					</div>
-					
+
 					<div class="switch">
 						<h4>11 Модуль</h4>
 						<p>Стратегии продаж</p>
@@ -933,7 +924,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</li>
 						</ul>
 					</div>
-					
+
 					<div class="switch">
 						<h4>12 Модуль</h4>
 						<p>Геймификация в запусках</p>
