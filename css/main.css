@@ -2003,7 +2003,6 @@ opacity:1;
 }
 
 
-
 /* =============================================================================
 11. Template Customization
 ============================================================================= */
@@ -2094,7 +2093,6 @@ opacity:1;
   border-color: #444;
 }
 
-/* Invert Clients Logo Images (Black to White) */
 .template-style-dark .client-block img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
@@ -2134,7 +2132,6 @@ opacity:1;
   background-color: #52565F;
 }
 
-/* Header Light Color BG */
 .header.header-color-light {
   background-color: #fff;
 }
@@ -2165,9 +2162,7 @@ opacity:1;
 .header.header-color-light .site-main-menu li.active a:after {
   background-color: #5166E1;
 }
-/* Header Light Color BG */
 
-/* Header Dark Color BG */
 .header.header-color-dark {
   background-color: #52565F;
 }
@@ -2175,15 +2170,12 @@ opacity:1;
 .header.header-color-dark .my-photo .border-block-bottom-40 {
   border-color: #5166E1;
 }
-/* /Header Dark Color */
 
-/* Header Main Color BG */
 .header-color-main .site-main-menu li a:after,
 .header-color-main .site-main-menu li a:hover:after,
 .header-color-main  .site-main-menu li.active a:after {
   background-color: #fff;
 }
-/* /Header Main Color BG */
 
 .project-link {
   margin: 0 0 4px;
@@ -2220,24 +2212,16 @@ opacity:1;
   text-shadow:none;
   box-shadow: none;
   border-bottom: none;
-      -webkit-transition: ease-in 0.4s;
-    -moz-transition: ease-in 0.4s;
-    -ms-transition: ease-in 0.4s;
-    -o-transition: ease-in 0.4s;
-    transition: ease-in 0.4s;
+  -webkit-transition: ease-in 0.4s;
+  -moz-transition: ease-in 0.4s;
+  -ms-transition: ease-in 0.4s;
+  -o-transition: ease-in 0.4s;
+  transition: ease-in 0.4s;
 }
 
-.mfp-title {
-
-    word-wrap: normal;
-
-}
-
+.mfp-title{word-wrap: normal;}
 .mfp-img img{background:#fff;}
-
 .lg-sub-html h4{color:#fff;}
-
-
 
 .cbtn {
     display: inline-block;
@@ -2331,31 +2315,31 @@ opacity:1;
 }
 
 .cbtn-border-left {
-    left: -2px;
-    bottom: -2px;
-    width: 2px;
-    height: 0;
+  left: -2px;
+  bottom: -2px;
+  width: 2px;
+  height: 0;
 }
 
 .cbtn-border-top {
-    left: -2px;
-    top: -2px;
-    width: 0;
-    height: 2px;
+  left: -2px;
+  top: -2px;
+  width: 0;
+  height: 2px;
 }
 
 .cbtn-border-right {
-    right: -2px;
-    top: -2px;
-    width: 2px;
-    height: 0;
+  right: -2px;
+  top: -2px;
+  width: 2px;
+  height: 0;
 }
 
 .cbtn-border-bottom {
-    right: -2px;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
+  right: -2px;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
 }
 
 #layoutgallery{
@@ -2363,8 +2347,8 @@ opacity:1;
 }
 
 .abt{
-text-align:center;
-margin-bottom: 20px;
+  text-align:center;
+  margin-bottom: 20px;
 }
 
 .preloader-text{
