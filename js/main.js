@@ -97,34 +97,34 @@ $('#portfolio_filters .active').trigger( "click" );
 
 
     // Contact form validator
-    $(function () {
+    // $(function () {
 
-        $('#contact-form').validator();
+    //     $('#contact-form').validator();
 
-        $('#contact-form').on('submit', function (e) {
-            if (!e.isDefaultPrevented()) {
-                var url = "contact_form/contact_form.php";
+    //     $('#contact-form').on('submit', function (e) {
+    //         if (!e.isDefaultPrevented()) {
+    //             var url = "contact_form/contact_form.php";
 
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    data: $(this).serialize(),
-                    success: function (data)
-                    {
-                        var messageAlert = 'alert-' + data.type;
-                        var messageText = data.message;
+    //             $.ajax({
+    //                 type: "POST",
+    //                 url: url,
+    //                 data: $(this).serialize(),
+    //                 success: function (data)
+    //                 {
+    //                     var messageAlert = 'alert-' + data.type;
+    //                     var messageText = data.message;
 
-                        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                        if (messageAlert && messageText) {
-                            $('#contact-form').find('.messages').html(alertBox);
-                            $('#contact-form')[0].reset();
-                        }
-                    }
-                });
-                return false;
-            }
-        });
-    });
+    //                     var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+    //                     if (messageAlert && messageText) {
+    //                         $('#contact-form').find('.messages').html(alertBox);
+    //                         $('#contact-form')[0].reset();
+    //                     }
+    //                 }
+    //             });
+    //             return false;
+    //         }
+    //     });
+    // });
     // /Contact form validator
 
     // Hide Mobile menu
@@ -303,14 +303,48 @@ $('#portfolio_filters .active').trigger( "click" );
             },
         });
 
-        $('.gallery').each(function() { // the containers for all your galleries
+        $('.gallery').each(function() {
             $(this).magnificPopup({
-                delegate: 'a', // the selector for gallery item
+                delegate: 'a',
                 type: 'image',
                 gallery: {
                 enabled:true
                 }
             });
+        });
+
+        function customAjaxScroll() {
+            var windowWidth = $(window).width();
+            if (windowWidth > 991) {
+                // Custom Ajax Page Scroll
+                $("#ajax-page").mCustomScrollbar({
+                    scrollInertia: 8,
+                    documentTouchScroll: false
+                });
+            } else {
+                $("#ajax-page").mCustomScrollbar('destroy');
+            }
+        }
+
+        jQuery(document).ready(function($){
+
+            // Ajax Loaded Page Scroll
+            customAjaxScroll();
+
+            $('.portfolio-page-carousel').owlCarousel({
+                smartSpeed:1200,
+                items: 1,
+                loop: true,
+                dots: true,
+                nav: true,
+                navText: false,
+                margin: 10
+            });
+
+        });
+
+        jQuery(window).on('resize', function() {
+            customAjaxScroll();
         });
 
         $('.ajax-page-load-link').magnificPopup({
