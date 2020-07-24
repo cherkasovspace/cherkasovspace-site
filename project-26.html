@@ -21,82 +21,7 @@
                         <img src="images/projects/26-project.jpg" alt="">
                     </div>
                 </div>
-
-                <script type="text/javascript">
-
-// $('#layoutgallery').on('click', function() {
-
-//     $(this).lightGallery({
-//         actualSize: false,
-//         hash: false,
-//         download: false,
-//         share: false,
-//         hideBarsDelay: 2000,
-//         dynamic: true,
-//         dynamicEl: [{
-//             "src": 'images/projects/01-site-1.png',
-//             'thumb': 'images/projects/01-site-1.png',
-//             'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-//         }, {
-//             "src": 'images/projects/01-site-2.png',
-//             'thumb': 'images/projects/01-site-2.png',
-//             'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-//         }, {
-//             "src": 'images/projects/01-site-3.png',
-//             'thumb': 'images/projects/01-site-3.png',
-//             'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-//         }, {
-//             "src": 'images/projects/01-site-4.png',
-//             'thumb': 'images/projects/01-site-4.png',
-//             'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-//         }, {
-//             "src": 'images/projects/01-site-5.png',
-//             'thumb': 'images/projects/01-site-5.png',
-//             'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-//         }, {
-//             "src": 'images/projects/01-site-6.png',
-//             'thumb': 'images/projects/01-site-6.png',
-//             'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-//         }]
-//     })
-
-// });
-
-
-                    function customAjaxScroll() {
-                        var windowWidth = $(window).width();
-                        if (windowWidth > 991) {
-                            // Custom Ajax Page Scroll
-                            $("#ajax-page").mCustomScrollbar({
-                                scrollInertia: 8,
-                                documentTouchScroll: false
-                            });
-                        } else {
-                            $("#ajax-page").mCustomScrollbar('destroy');
-                        }
-                    }
-
-                    jQuery(document).ready(function($){
-
-                        // Ajax Loaded Page Scroll
-                        customAjaxScroll();
-
-                        $('.portfolio-page-carousel').owlCarousel({
-                            smartSpeed:1200,
-                            items: 1,
-                            loop: true,
-                            dots: true,
-                            nav: true,
-                            navText: false,
-                            margin: 10
-                        });
-
-                    });
-
-                    jQuery(window).on('resize', function() {
-                        customAjaxScroll();
-                    });
-                </script>
+                <script src="/js/proj.js"></script>
             </div>
 
             <div class="col-sm-5 col-md-5 portfolio-block">
@@ -112,8 +37,13 @@
                 <!--noindex--><p class="text-justify">Авторский живой тренинг Надежды Гайдукевич.</p><!--/noindex-->
                 <!-- /Project Description -->
 
-
-
+                <!-- Technology -->
+                <div class="tags-block">
+                    <ul class="tags">
+                        <li><a>Web-дизайн</a></li>
+                    </ul>
+                </div>
+                <!-- /Technology -->
                 <a href="images/projects/26-project-b.png" rel="nofollow" target="_blank" class="cbtn nav-link">
                     <div class="cbtn-bottom"></div>
                     <div class="cbtn-top">
