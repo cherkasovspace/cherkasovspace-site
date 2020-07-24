@@ -2485,10 +2485,15 @@ form .label-chek {
     width: 100%;
 }
 
+.modal-body form input[type=checkbox] {
+    width: auto;
+}
+
 .modal-body form input {
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid #c3c3c3;
     font-family: sans-serif;
+    text-align: left;
 }
