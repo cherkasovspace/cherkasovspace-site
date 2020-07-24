@@ -11,117 +11,17 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1>Обложка методического пособия «Проектирование электронных учебных продуктов (ЭУК) в системе дистанционного образования»</h1>
+            <h1>Обложка методического пособия</h1>
         </div>
 
         <div class="row">
             <div class="col-sm-7 col-md-7 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
                     <div class="item gallery">
-                        <a href="images/projects/23-project-b.jpg" class="lightbox f-gallery" title="Обложка методического пособия «Проектирование электронных учебных продуктов (ЭУК) в системе дистанционного образования»"><img src="images/projects/23-project-b.jpg" alt=""></a>
-<!--                         <a href="images/portfolio/full/2.jpg" title="Some text"></a>
-                        <a href="images/portfolio/full/3.jpg" title="Some text"></a> -->
+                        <a href="images/projects/23-project-b.jpg" class="lightbox f-gallery" title="Обложка методического пособия"><img src="images/projects/23-project-b.jpg" alt=""></a>
                     </div>
                 </div>
-
-
-
-                <script type="text/javascript">
-
-                    $('.lightbox:not(.f-gallery)').magnificPopup({
-                        type: 'image',
-                        removalDelay: 300,
-                        gallery: {
-                        enabled: true
-                        },
-
-                        mainClass: 'mfp-fade',
-                        image: {
-                            titleSrc: 'title',
-                            gallery: {
-                                enabled: true
-                            },
-                        },
-
-                        iframe: {
-                            markup: '<div class="mfp-iframe-scaler">'+
-                                    '<div class="mfp-close"></div>'+
-                                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                                    '<div class="mfp-title mfp-bottom-iframe-title"></div>'+
-                                  '</div>',
-
-                            patterns: {
-                                youtube: {
-                                  index: 'youtube.com/',
-
-                                  id: 'v=',
-                                  src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
-                                },
-                                vimeo: {
-                                  index: 'vimeo.com/',
-                                  id: '/',
-                                  src: '//player.vimeo.com/video/%id%?autoplay=1'
-                                },
-                                gmaps: {
-                                  index: '//maps.google.',
-                                  src: '%id%&output=embed'
-                                }
-                            },
-
-                            srcAction: 'iframe_src',
-                        },
-
-                        callbacks: {
-                            markupParse: function(template, values, item) {
-                             values.title = item.el.attr('title');
-                            }
-                        },
-                    });
-
-                    $('.gallery').each(function() {
-                        $(this).magnificPopup({
-                            delegate: 'a',
-                            type: 'image',
-                            gallery: {
-                            enabled:true
-                            }
-                        });
-                    });
-
-                    function customAjaxScroll() {
-                        var windowWidth = $(window).width();
-                        if (windowWidth > 991) {
-                            // Custom Ajax Page Scroll
-                            $("#ajax-page").mCustomScrollbar({
-                                scrollInertia: 8,
-                                documentTouchScroll: false
-                            });
-                        } else {
-                            $("#ajax-page").mCustomScrollbar('destroy');
-                        }
-                    }
-
-                    jQuery(document).ready(function($){
-
-                        // Ajax Loaded Page Scroll
-                        customAjaxScroll();
-
-                        $('.portfolio-page-carousel').owlCarousel({
-                            smartSpeed:1200,
-                            items: 1,
-                            loop: true,
-                            dots: true,
-                            nav: true,
-                            navText: false,
-                            margin: 10
-                        });
-
-                    });
-
-                    jQuery(window).on('resize', function() {
-                        customAjaxScroll();
-                    });
-                </script>
+                <script src="/js/proj.js"></script>
             </div>
 
             <div class="col-sm-5 col-md-5 portfolio-block">
@@ -130,7 +30,7 @@
                     <h3>Описание</h3>
                 </div>
                 <ul class="project-general-info">
-                    <li><p><i class="fa fa-info-circle"></i> Методичка для всех участников вебинара</p></li>
+                    <li><p><i class="fa fa-info-circle"></i> Методичка «Проектирование электронных учебных продуктов (ЭУК) в системе дистанционного образования» для всех участников вебинара</p></li>
                     <li><p><i class="fa fa-globe"></i> <a href="#" rel="nofollow">proprodazhy.ru</a></p></li>
                     <li><p><i class="fa fa-calendar"></i> 2019</p></li>
                 </ul>
