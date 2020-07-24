@@ -591,7 +591,7 @@ border:none;
 
 .hero-area .block .btn-main {
 /*  margin-right: 8px;*/
-opacity: .8;
+/*opacity: .8;*/
 }
 
 .hero-area .block .btn-main:hover {
@@ -977,7 +977,8 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), url
   font-weight: 400;
   padding: 10px 0;
   color: #333;
-  font-size: 16px;
+/*  font-size: 16px;*/
+font-size: 1.4em;
 }
 
 
@@ -2976,4 +2977,18 @@ display: flex;
   display: flex;
   flex-direction: column-reverse;
   flex: 1 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+.pricing-table .pricing-item{
+  padding: 20px;
+}
+.pricing-item .btn-main {
+  font-size: calc(0.9em + 1vmin);
+}
+
+.partic p {
+  font-size: 1.4em;
+}
+
 }
