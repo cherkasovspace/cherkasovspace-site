@@ -2443,4 +2443,10 @@ form .label-chek {
   .service-2 .service-item {
     min-height: 100%;
   }
+  .about-2 .checklist {
+    padding-left: 30px;
+  }
+.about-2 .checklist li:before {
+    margin-left: -38px;
+  }
 }
