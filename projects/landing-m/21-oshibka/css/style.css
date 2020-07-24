@@ -707,7 +707,7 @@ margin-bottom: 44px;
 .about-2 .checklist li:before {
   position: absolute;
   margin-right: 12px;
-  margin-left: -45px;
+  margin-left: -38px;
   content: "\f375";
   font-family: "themefisher-font";
   color: #5AB0B7;
@@ -2706,33 +2706,27 @@ font-weight:700;
 
 .bonuses p{color: #333;}
 
-
-
-
-
 .open-up {
   padding-left: 30px;
 }
 
 .open-up li {
   position: relative;
-      margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .open-up li p {
-font-size: 20px;
+  font-size: 20px;
 }
 
 .open-up li:before {
-position: absolute;
-    /* margin-right: 12px; */
-    margin-left: -40px;
+    position: absolute;
+    margin-left: -35px;
+    top: -3px;
     content: "\f0a9";
     font-family: FontAwesome;
     color: #5AB0B7;
-
     font-size: 30px;
-
 }
 
 .number-up{
@@ -2745,13 +2739,6 @@ position: absolute;
 .number-up li {
   margin: 10px;
 }
-
-
-
-
-
-
-
 
 .btn-open{
     padding: 9px 0px;
