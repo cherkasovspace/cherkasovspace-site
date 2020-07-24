@@ -4203,3 +4203,42 @@ position: relative;
 .card-header:first-child{
   border-radius:0;
 }
+
+.table-ticket>tbody>tr {
+  background-color: #E7E7E7;
+}
+
+.table-ticket {
+  width: 100%
+}
+
+.table-ticket>tbody>tr>td {
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+  color: #3f3f3f;
+  line-height: 18px;
+  border-top: none;
+}
+
+.table-ticket>tbody>tr>td:first-child {
+  font-weight: 700;
+}
+
+.table-ticket>thead>tr>th {
+  font-size: 14px;
+  font-weight: 400;
+  color: #656565;
+  line-height: 27px;
+  border-bottom: none;
+  text-align: left;
+}
+
+.table-ticket>tbody>tr>td, .table-ticket>thead>tr>th{
+  padding: 14px 15px;
+}
+
+@media all and (max-width:350px) {
+  .table-ticket>tbody>tr>td, .table-ticket>thead>tr>th{
+    padding: 8px;
+  }
+}
