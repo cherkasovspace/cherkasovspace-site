@@ -2432,3 +2432,15 @@ form .label-chek {
   .lb-data .lb-number {
     display: none !important;
 }
+
+@media only screen and (max-width: 500px) {
+  .btn-main {
+    padding: 15px;
+  }
+  .hero-area .block h1 {
+    font-size: calc(1.3em + 2vmin);
+  }
+  .service-2 .service-item {
+    min-height: 100%;
+  }
+}
