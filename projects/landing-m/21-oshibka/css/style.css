@@ -2379,6 +2379,7 @@ form input[type=text], form input[type=email], form input[type=textarea] {
 
 .modal-footer {
   border-top: none;
+  padding: 15px 0 15px 0;
 }
 
 .modal-header {
@@ -3005,11 +3006,6 @@ background: #fee700;
 }
 
 .partic p{color:#333;font-size: 1.8em;}
-
-
-
-
-
 
     .pricing-item {
   justify-content: space-between;
