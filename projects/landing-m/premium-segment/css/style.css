@@ -3109,3 +3109,27 @@ background: #fee700;
     font-family: sans-serif;
     text-align: left;
 }
+
+
+.block-form .modal-title {
+  font-size: 1.6em;
+  color: #3a3a3a;
+}
+
+.block-form .form-check-label {
+  color: #3a3a3a;
+}
+
+.block-form .btn-primary {
+    background-color: #c70e33;
+    border-color: #c70e33;
+}
+
+.block-form .btn-primary:hover {
+    color: #fff;
+    background-color: #a50b2a;
+    border-color: #a50b2a;
+  }
+
+
+
