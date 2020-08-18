@@ -27,7 +27,15 @@
 		arrows: true,
 		autoplay: false,
   		autoplaySpeed: 3000,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+	    responsive: [
+		    {
+		        breakpoint: 500,
+		        settings: {
+					arrows: false
+		        }
+		    }
+		]
 	});
 
 
