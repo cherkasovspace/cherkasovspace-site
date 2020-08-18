@@ -3141,9 +3141,10 @@ background: #fee700;
     font-size: 25px;
   }
 
-  .service-block {
+  .services .service-block {
     width: 280px;
     left: 0;
+    padding: 20px;
   }
 
 }
