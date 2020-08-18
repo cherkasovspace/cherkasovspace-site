@@ -3140,6 +3140,12 @@ background: #fee700;
     margin-left: -30px;
     font-size: 25px;
   }
+
+  .service-block {
+    width: 280px;
+    left: 0;
+  }
+
 }
 
 .features .row h4{
