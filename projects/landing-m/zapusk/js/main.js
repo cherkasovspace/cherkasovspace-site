@@ -21,6 +21,10 @@ $('.owl-carousel').owlCarousel({
     },
     600: {
       items: 1
+    },
+    400: {
+      items: 1,
+      nav: false
     }
   }
 })
