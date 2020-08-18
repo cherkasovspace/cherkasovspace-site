@@ -3130,3 +3130,8 @@ background: #fee700;
     background-color: #a50b2a;
     border-color: #a50b2a;
 }
+
+.f-img{
+  width: 100%;
+  max-width: 321px;
+}
