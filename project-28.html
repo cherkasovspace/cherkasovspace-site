@@ -17,11 +17,94 @@
         <div class="row">
             <div class="col-sm-7 col-md-7 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
-                    <div class="item gallery">
-                        <a href="images/projects/28-project.jpg" class="lightbox f-gallery" title="Лендинги к вебинарам Виталия Кузнецова"><img src="images/projects/28-project.jpg" alt=""></a>
+
+                    <div id="layoutgallery" class="item">
+                        <img src="images/projects/28-project.jpg" alt="Лендинги к вебинарам Виталия Кузнецова">
                     </div>
                 </div>
-                <script src="/js/proj.js"></script>
+                <script type="text/javascript">
+
+					$('#layoutgallery').on('click', function() {
+
+					    $(this).lightGallery({
+					        actualSize: false,
+					        hash: false,
+					        download: false,
+					        share: false,
+					        hideBarsDelay: 2000,
+					        dynamic: true,
+					        dynamicEl: [{
+					            "src": 'images/projects/28-project.jpg',
+					            'thumb': 'images/projects/28-project.jpg',
+					            'subHtml': '<h4>1. Лендинг «21 фатальная ошибка при развитии онлайн-бизнеса»</h4>'
+					        }, {
+					            "src": 'images/projects/28-project.jpg',
+					            'thumb': 'images/projects/28-project.jpg',
+					            'subHtml': '<h4>1. Лендинг «21 фатальная ошибка при развитии онлайн-бизнеса»</h4>'
+					        }, {
+					            "src": 'images/projects/28-project.jpg',
+					            'thumb': 'images/projects/28-project.jpg',
+					            'subHtml': '<h4>1. Лендинг «21 фатальная ошибка при развитии онлайн-бизнеса»</h4>'
+					        }, {
+					            "src": 'images/projects/28-project.jpg',
+					            'thumb': 'images/projects/28-project.jpg',
+					            'subHtml': '<h4>1. Лендинг «21 фатальная ошибка при развитии онлайн-бизнеса»</h4>'
+					        }, {
+					            "src": 'images/projects/28-project.jpg',
+					            'thumb': 'images/projects/28-project.jpg',
+					            'subHtml': '<h4>1. Лендинг «21 фатальная ошибка при развитии онлайн-бизнеса»</h4>'
+					        }, {
+					            "src": 'images/projects/28-project.jpg',
+					            'thumb': 'images/projects/28-project.jpg',
+					            'subHtml': '<h4>1. Лендинг «21 фатальная ошибка при развитии онлайн-бизнеса»</h4>'
+					        }, {
+					            "src": 'images/projects/28-project.jpg',
+					            'thumb': 'images/projects/28-project.jpg',
+					            'subHtml': '<h4>1. Лендинг «21 фатальная ошибка при развитии онлайн-бизнеса»</h4>'
+					        }, {
+					            "src": 'images/projects/28-project.jpg',
+					            'thumb': 'images/projects/28-project.jpg',
+					            'subHtml': '<h4>1. Лендинг «21 фатальная ошибка при развитии онлайн-бизнеса»</h4>'
+					        }]
+					    })
+
+					});
+
+
+                    function customAjaxScroll() {
+                        var windowWidth = $(window).width();
+                        if (windowWidth > 991) {
+                            // Custom Ajax Page Scroll
+                            $("#ajax-page").mCustomScrollbar({
+                                scrollInertia: 8,
+                                documentTouchScroll: false
+                            });
+                        } else {
+                            $("#ajax-page").mCustomScrollbar('destroy');
+                        }
+                    }
+
+                    jQuery(document).ready(function($){
+
+                        // Ajax Loaded Page Scroll
+                        customAjaxScroll();
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+
+                    jQuery(window).on('resize', function() {
+                        customAjaxScroll();
+                    });
+                </script>
             </div>
 
             <div class="col-sm-5 col-md-5 portfolio-block">
