@@ -3147,6 +3147,14 @@ background: #fee700;
     padding: 20px;
   }
 
+  .testimonial .item .client-thumb{
+    padding: 0;
+  }
+
+  .youtubevideowrap {
+      width: 100%;
+  }
+
 }
 
 .features .row h4{
