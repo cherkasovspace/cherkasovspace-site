@@ -3319,9 +3319,32 @@ font-size: calc(0.6em + 1vmin);
 
 .hand-section {display:none;}
 
-.p-bg p, .program-list li p, {
+.p-bg p, .program-list li p, .final-result-section .result-middle h4, .final-result-section .result-middle p{
     font-size: calc(0.8em + 1vmin);
   }
+
+.module-6 .container-title-sm {
+  margin-bottom: 2rem;
+  font-size: calc(1em + 2vmin);
+}
+
+.dwbtn{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.variants-section table[data-comparing="active"] tbody th{
+      font-size: 0.9em;
+}
+
+.variants-section table td {
+    font-size: calc(0.7em + 1vmin);
+}
+
+.variants-section .pricetext{
+      font-size: calc(1.6em + 1vmin);
+}
 
 }/* end media 480 */
 
