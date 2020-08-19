@@ -3363,6 +3363,11 @@ font-size: calc(0.6em + 1vmin);
   width: 100%;
 }
 
+.foreveryone-section .program-list li > ul {
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
 }/* end media 480 */
 
 .lookvideo, .v-play{display:none !important;}
