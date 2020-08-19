@@ -3176,7 +3176,7 @@ margin-top:0;
   margin-bottom: 1rem;
 }
 
-.module-5 .program-module-block {
+.module-5 .program-module-block .i-r{
 padding-right:0 !important;
 }
 
@@ -3304,11 +3304,6 @@ font-size: calc(0.6em + 1vmin);
      letter-spacing: 1px;
  }
 
-
-
-
-
-
 .author-section .b h3 {
     padding: 0 15px 0 15px;
     padding-top: 30px;
@@ -3323,6 +3318,10 @@ font-size: calc(0.6em + 1vmin);
 }
 
 .hand-section {display:none;}
+
+.p-bg p, .program-list li p, {
+    font-size: calc(0.8em + 1vmin);
+  }
 
 }/* end media 480 */
 
