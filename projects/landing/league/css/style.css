@@ -3362,7 +3362,7 @@ font-size: calc(0.6em + 1vmin);
   z-index: 2;
 }
 
-.p-bg span:after {
+/*.p-bg span:after {
   position: absolute;
   content: '';
   right: -32px;
@@ -3370,7 +3370,7 @@ font-size: calc(0.6em + 1vmin);
   border-top: 53.6px solid #4019a0;
   border-right: 32px solid transparent;
   z-index: 2;
-}
+}*/
 
 .p-bg p {
   font-size: calc(0.4em + 1vmin);
