@@ -18,83 +18,63 @@
             <div class="col-sm-7 col-md-7 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
                     <div id="layoutgallery" class="item">
-                        <img src="images/projects/11-project.jpg" alt="">
+                        <img src="images/projects/29-project-t.jpg" alt="">
                     </div>
                 </div>
 
                 <script type="text/javascript">
 
-$('#layoutgallery').on('click', function() {
+                $('#layoutgallery').on('click', function() {
 
-    $(this).lightGallery({
-        actualSize: false,
-        hash: false,
-        download: false,
-        share: false,
-        hideBarsDelay: 2000,
-        dynamic: true,
-        dynamicEl: [{
-            "src": 'images/projects/01-site-1.png',
-            'thumb': 'images/projects/01-site-1.png',
-            'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-        }, {
-            "src": 'images/projects/01-site-2.png',
-            'thumb': 'images/projects/01-site-2.png',
-            'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-        }, {
-            "src": 'images/projects/01-site-3.png',
-            'thumb': 'images/projects/01-site-3.png',
-            'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-        }, {
-            "src": 'images/projects/01-site-4.png',
-            'thumb': 'images/projects/01-site-4.png',
-            'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-        }, {
-            "src": 'images/projects/01-site-5.png',
-            'thumb': 'images/projects/01-site-5.png',
-            'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-        }, {
-            "src": 'images/projects/01-site-6.png',
-            'thumb': 'images/projects/01-site-6.png',
-            'subHtml': '<h4>Сайт компании «Вито-Сервис»</h4>'
-        }]
-    })
+                    $(this).lightGallery({
+                        actualSize: false,
+                        hash: false,
+                        download: false,
+                        share: false,
+                        hideBarsDelay: 2000,
+                        dynamic: true,
+                        dynamicEl: [{
+                            "src": 'images/projects/29-project-1.jpg',
+                            'thumb': 'images/projects/29-project-1.jpg',
+                            'subHtml': '<h4>Лендинг «Большие деньги»</h4>'
+                        }]
+                    })
 
-});
+                });
 
-                    function customAjaxScroll() {
-                        var windowWidth = $(window).width();
-                        if (windowWidth > 991) {
-                            // Custom Ajax Page Scroll
-                            $("#ajax-page").mCustomScrollbar({
-                                scrollInertia: 8,
-                                documentTouchScroll: false
-                            });
-                        } else {
-                            $("#ajax-page").mCustomScrollbar('destroy');
-                        }
-                    }
-
-                    jQuery(document).ready(function($){
-
-                        // Ajax Loaded Page Scroll
-                        customAjaxScroll();
-
-                        $('.portfolio-page-carousel').owlCarousel({
-                            smartSpeed:1200,
-                            items: 1,
-                            loop: true,
-                            dots: true,
-                            nav: true,
-                            navText: false,
-                            margin: 10
+                function customAjaxScroll() {
+                    var windowWidth = $(window).width();
+                    if (windowWidth > 991) {
+                        // Custom Ajax Page Scroll
+                        $("#ajax-page").mCustomScrollbar({
+                            scrollInertia: 8,
+                            documentTouchScroll: false
                         });
+                    } else {
+                        $("#ajax-page").mCustomScrollbar('destroy');
+                    }
+                }
 
+                jQuery(document).ready(function($){
+
+                    // Ajax Loaded Page Scroll
+                    customAjaxScroll();
+
+                    $('.portfolio-page-carousel').owlCarousel({
+                        smartSpeed:1200,
+                        items: 1,
+                        loop: true,
+                        dots: true,
+                        nav: true,
+                        navText: false,
+                        margin: 10
                     });
 
-                    jQuery(window).on('resize', function() {
-                        customAjaxScroll();
-                    });
+                });
+
+                jQuery(window).on('resize', function() {
+                    customAjaxScroll();
+                });
                 </script>
             </div>
 
@@ -106,7 +86,7 @@ $('#layoutgallery').on('click', function() {
                 <ul class="project-general-info">
                     <li><p><i class="fa fa-info-circle"></i> Верстка сайта</p></li>
                     <li><p><i class="fa fa-arrow-circle-left"></i> Щелкните по изображению, чтобы открыть галерею</p></li>
-                    <!--noindex--><li><p><i class="fa fa-globe"></i> <a href="/projects/rich" rel="nofollow">cherkasov.space/projects/rich</a></p></li><!--/noindex-->
+                    <li><p><i class="fa fa-globe"></i> <a href="/projects/landing/rich" rel="nofollow">cherkasov.space/projects/landing/rich</a></p></li>
                     <li><p><i class="fa fa-calendar"></i> 2019</p></li>
                 </ul>
 
@@ -125,7 +105,7 @@ $('#layoutgallery').on('click', function() {
                 </div>
                 <!-- /Technology -->
 
-                <a href="/projects/rich" rel="nofollow" target="_blank" class="cbtn nav-link">
+                <a href="/projects/landing/rich" rel="nofollow" target="_blank" class="cbtn nav-link">
                     <div class="cbtn-bottom"></div>
                     <div class="cbtn-top">
                     <div class="cbtn-label">Просмотр</div>
