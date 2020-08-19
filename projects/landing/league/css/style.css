@@ -3346,6 +3346,17 @@ font-size: calc(0.6em + 1vmin);
       font-size: calc(1.6em + 1vmin);
 }
 
+.foreveryone-section .program-list li p{
+  font-size: calc(0.7em + 2vmin);
+}
+
+.foreveryone-section .program-list li .il img{
+  max-width: 37px;
+}
+.foreveryone-section .program-list li p {
+  padding-left: 25px;
+}
+
 }/* end media 480 */
 
 .lookvideo, .v-play{display:none !important;}
