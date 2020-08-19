@@ -35,6 +35,12 @@ var nextButton = document.createElement('div');
     nextButton.innerHTML = "<span>Следующий тариф</span><i class='fa fa-angle-double-right'></i>";
 
 
+var hiddenElement = document.getElementById("variants");
+
+function handleButtonClick() {
+   hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+}
+
 function createButtons() {
   nextButton.style.display =  'none';
   prevButton.style.display =  'none';
@@ -47,15 +53,18 @@ function createButtons() {
   nextButton.addEventListener('click', function(){
     currentVisibleColumn = currentVisibleColumn + 1 >= columnHeaders.length ? 1 : currentVisibleColumn + 1;
     showCurrentlyVisible();
-    document.location+='#variants';return false;
+    handleButtonClick();
   });
 
   prevButton.addEventListener('click', function(){
     currentVisibleColumn = currentVisibleColumn - 1 > columnHeaders.length ? 1 : currentVisibleColumn - 1;
     showCurrentlyVisible();
-    document.location+='#variants';return false;
+    handleButtonClick();
   });
 }
+
+
+
 
 function showCurrentlyVisible() {
     // Get the Items we're going to show. The :not(:empty) query here is because sometimes you have empty <th>s in <thead>
