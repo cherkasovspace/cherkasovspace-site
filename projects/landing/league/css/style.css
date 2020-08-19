@@ -3353,8 +3353,14 @@ font-size: calc(0.6em + 1vmin);
 .foreveryone-section .program-list li .il img{
   max-width: 37px;
 }
+
 .foreveryone-section .program-list li p {
   padding-left: 25px;
+}
+
+.popup-youtube img{
+  max-width: 200px;
+  width: 100%;
 }
 
 }/* end media 480 */
