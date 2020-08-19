@@ -47,13 +47,13 @@ function createButtons() {
   nextButton.addEventListener('click', function(){
     currentVisibleColumn = currentVisibleColumn + 1 >= columnHeaders.length ? 1 : currentVisibleColumn + 1;
     showCurrentlyVisible();
-    document.location='/#variants';return false;
+    document.location+='#variants';return false;
   });
 
   prevButton.addEventListener('click', function(){
     currentVisibleColumn = currentVisibleColumn - 1 > columnHeaders.length ? 1 : currentVisibleColumn - 1;
     showCurrentlyVisible();
-    document.location='/#variants';return false;
+    document.location+='#variants';return false;
   });
 }
 
