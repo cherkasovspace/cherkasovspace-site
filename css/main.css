@@ -884,7 +884,7 @@ ul.social-links li:last-child a {
   margin: 12px 0 5px;
   font-size: 60px;
   line-height: 1.1em;
-  color: rgba(115, 133, 237, 0.28);
+  color: #5166E1;
   z-index: 1;
 }
 
@@ -892,8 +892,8 @@ ul.social-links li:last-child a {
   display: inline-block;
   position: relative;
   margin: 0;
-  color: #fff;
-  background-color: #5166E1;
+  color: #707ab5;
+  background-color: #F5FBFF;
   padding: 0 10px;
   font-size: 14px;
   font-weight: 200;
