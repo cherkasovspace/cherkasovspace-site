@@ -833,4 +833,8 @@ margin: 20px;
     transform: translate(-50%,-50%);
 }
 
+section {
+    padding: 30px 0;
+}
+
 }
