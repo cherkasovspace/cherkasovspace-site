@@ -393,31 +393,30 @@ body {
 }
 
 .panel-default>.panel-heading a[aria-expanded="false"]:before {
-    display: inline-block;
-    content: ' ';
-    background-image: url(https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/247/h/eded400f24b7ec7231bcd4577a783f95.png);
-    background-position: center;
-    vertical-align: bottom;
-    height: 18px;
-    width: 18px;
-    margin-right: 10px;
-        float: left;
+  display: inline-block;
+  content: ' ';
+  background-image: url(images/before.png);
+  background-position: center;
+  vertical-align: bottom;
+  height: 18px;
+  width: 18px;
+  margin-right: 10px;
+  float: left;
 }
 
 .panel-default>.panel-heading a[aria-expanded="true"]:before {
-    display: inline-block;
-    content: ' ';
-    background-image: url(https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/247/h/eded400f24b7ec7231bcd4577a783f95.png);
-    background-position: center;
-    vertical-align: bottom;
-    height: 18px;
-    width: 18px;
+  display: inline-block;
+  content: ' ';
+  background-image: url(images/before.png);
+  background-position: center;
+  vertical-align: bottom;
+  height: 18px;
+  width: 18px;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   margin-right: 10px;
-      float: left;
+  float: left;
 }
-
 
 .accordion-option {
   width: 100%;
@@ -438,25 +437,21 @@ body {
 .accordion-option .toggle-accordion-six{
   font-size: 16px;
   color: #5c5c5c;
-      display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-left: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: auto;
 }
 
 .accordion-option .toggle-accordion:before, .accordion-option .toggle-accordion-two:before, .accordion-option .toggle-accordion-three:before, .accordion-option .toggle-accordion-four:before, .accordion-option .toggle-accordion-five:before, .accordion-option .toggle-accordion-six:before {
   content: "Скрыть все";
 }
 
-
-
 .accordion-option .toggle-accordion.active:before, .accordion-option .toggle-accordion-two.active:before, .accordion-option .toggle-accordion-three.active:before, .accordion-option .toggle-accordion-four.active:before, .accordion-option .toggle-accordion-five.active:before, .accordion-option .toggle-accordion-six.active:before {
   content: "Показать все";
 }
 
-
 .panel-group a{text-decoration: none; font-weight:700;color: #343434;}
-
 
 .img-scr{
 max-width: 100%;
@@ -636,7 +631,7 @@ display: flex;
 
 .lst li{
   font-weight: 700;
-  background-image: url(https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/23/h/9f5e9f81738a5a82d2905f85c8812132.png);
+  background-image: url(images/li.png);
     background-repeat: no-repeat;
     line-height: 30px;
     padding-left: 38px;
