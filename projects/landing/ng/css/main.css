@@ -1,16 +1,16 @@
 
 @font-face {
   font-family: 'Circe';
-  src: url("https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/118/h/f94648b2134b4e4df77944c2bee84439.woff") format("woff"),
-       url("https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/214/h/353dca649c3a36f975fac434e2d9e788.otf") format("opentype");
+  src: url("fonts/circe.woff") format("woff"),
+       url("fonts/circe.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'CirceBold';
-  src: url("https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/69/h/23c433785f6dd6c847169334b4fe6d19.woff") format("woff"),
-       url("https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/72/h/b347482a345a5796c447bf877cb59a58.otf") format("opentype");
+  src: url("fonts/circebold.woff") format("woff"),
+       url("fonts/circebold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
@@ -113,7 +113,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("https://fin-1.com/pl/fileservice/user/file/download?h=93d85fe9d03abbf17a5990575cf1e7db.png");
+  background-image: url("images/fon.png");
   text-align: center;
   color: white;
 }
@@ -202,8 +202,6 @@ header .header-content .header-content-inner p {
   min-height: 102px;
 
 }
-
-
 
 .call-to-action h2 {
   margin: 0 auto 20px;
@@ -357,17 +355,14 @@ body {
 }
 
 .panel-heading .panel-price{
-background-color: #343434;
-    color: #fff;
-    min-width: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-
+  background-color: #343434;
+  color: #fff;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
 }
-
-
 
 .panel-default>.panel-heading.even{
   background-color: #d3d3d3;
@@ -384,13 +379,10 @@ background-color: #343434;
   user-select: none;
 }
 
-
-
 .panel-default>.panel-heading a {
   display: block;
   padding: 10px 15px;
 }
-
 
 .panel-default>.panel-heading a[aria-expanded="true"] {
   background-color: #eaeaea;
@@ -500,9 +492,6 @@ max-width: 100%;
    max-width: 100%;
 }
 
-
-
-
 .redbl{
 background-color: rgba(195, 36, 36, 0.58);
 padding: 20px;
@@ -519,7 +508,7 @@ padding: 20px;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("https://fin-1.com/pl/fileservice/user/file/download?h=e5675d72e401196642e5b970893c65f5.png");
+  background-image: url("images/fon2.png");
   text-align: center;
   color: white;
 }
@@ -533,7 +522,7 @@ padding: 20px;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("https://fin-1.com/pl/fileservice/user/file/download?h=a40f865bac24fe0c89d37b8f849edf22.png");
+  background-image: url("images/fon3.png");
   text-align: center;
   color: white;
 }
@@ -791,4 +780,34 @@ display: flex;
     color: #FFFFFF;
     font-weight: bold;
     max-width: 100%;
+}
+
+@media all and (max-width: 400px) {
+
+  .triangle-box .triangle-content p {
+    font-size: 2rem;
+  }
+
+  .bg-primary:after {
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 150px solid #ffffff;
+  }
+
+  .right-arrow,.left-arrow {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .right-arrow:after, .left-arrow:after {
+    content: none;
+    display: none;
+    width:0;
+    height:0;
+    visibility:hidden;
+  }
+
+
+
+
 }
