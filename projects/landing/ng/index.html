@@ -1,261 +1,88 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Новогодняя распродажа от Максима Темченко</title>
-
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-<script>
-$(document).ready(function() {
-  $(".toggle-accordion").on("click", function() {
-    var accordionId = $(this).attr("accordion-id"),
-      numPanelOpen = $(accordionId + ' .collapse.in').length;
-
-    $(this).toggleClass("active");
-
-    if (numPanelOpen == 0) {
-      openAllPanels(accordionId);
-    } else {
-      closeAllPanels(accordionId);
-    }
-  })
-
-  openAllPanels = function(aId) {
-    $(aId + ' .panel-collapse:not(".in")').collapse('show');
-  }
-  closeAllPanels = function(aId) {
-    $(aId + ' .panel-collapse.in').collapse('hide');
-  }
-
-});
-
-
-$(document).ready(function() {
-  $(".toggle-accordion-two").on("click", function() {
-    var accordionIdTwo = $(this).attr("accordion-id-two"),
-      numPanelOpen = $(accordionIdTwo + ' .collapse.in').length;
-
-    $(this).toggleClass("active");
-
-    if (numPanelOpen == 0) {
-      openAllPanels(accordionIdTwo);
-    } else {
-      closeAllPanels(accordionIdTwo);
-    }
-  })
-
-  openAllPanels = function(aId) {
-    $(aId + ' .panel-collapse:not(".in")').collapse('show');
-  }
-  closeAllPanels = function(aId) {
-    $(aId + ' .panel-collapse.in').collapse('hide');
-  }
-
-});
-
-$(document).ready(function() {
-  $(".toggle-accordion-three").on("click", function() {
-    var accordionIdThree = $(this).attr("accordion-id-three"),
-      numPanelOpen = $(accordionIdThree + ' .collapse.in').length;
-
-    $(this).toggleClass("active");
-
-    if (numPanelOpen == 0) {
-      openAllPanels(accordionIdThree);
-    } else {
-      closeAllPanels(accordionIdThree);
-    }
-  })
-
-  openAllPanels = function(aId) {
-    $(aId + ' .panel-collapse:not(".in")').collapse('show');
-  }
-  closeAllPanels = function(aId) {
-    $(aId + ' .panel-collapse.in').collapse('hide');
-  }
-
-});
-
-$(document).ready(function() {
-  $(".toggle-accordion-four").on("click", function() {
-    var accordionIdFour = $(this).attr("accordion-id-four"),
-      numPanelOpen = $(accordionIdFour + ' .collapse.in').length;
-
-    $(this).toggleClass("active");
-
-    if (numPanelOpen == 0) {
-      openAllPanels(accordionIdFour);
-    } else {
-      closeAllPanels(accordionIdFour);
-    }
-  })
-
-  openAllPanels = function(aId) {
-    $(aId + ' .panel-collapse:not(".in")').collapse('show');
-  }
-  closeAllPanels = function(aId) {
-    $(aId + ' .panel-collapse.in').collapse('hide');
-  }
-
-});
-
-$(document).ready(function() {
-  $(".toggle-accordion-five").on("click", function() {
-    var accordionIdFive = $(this).attr("accordion-id-five"),
-      numPanelOpen = $(accordionIdFive + ' .collapse.in').length;
-
-    $(this).toggleClass("active");
-
-    if (numPanelOpen == 0) {
-      openAllPanels(accordionIdFive);
-    } else {
-      closeAllPanels(accordionIdFive);
-    }
-  })
-
-  openAllPanels = function(aId) {
-    $(aId + ' .panel-collapse:not(".in")').collapse('show');
-  }
-  closeAllPanels = function(aId) {
-    $(aId + ' .panel-collapse.in').collapse('hide');
-  }
-
-});
-
-$(document).ready(function() {
-  $(".toggle-accordion-six").on("click", function() {
-    var accordionIdSix = $(this).attr("accordion-id-six"),
-      numPanelOpen = $(accordionIdSix + ' .collapse.in').length;
-
-    $(this).toggleClass("active");
-
-    if (numPanelOpen == 0) {
-      openAllPanels(accordionIdSix);
-    } else {
-      closeAllPanels(accordionIdSix);
-    }
-  })
-
-  openAllPanels = function(aId) {
-    $(aId + ' .panel-collapse:not(".in")').collapse('show');
-  }
-  closeAllPanels = function(aId) {
-    $(aId + ' .panel-collapse.in').collapse('hide');
-  }
-
-});
-
-</script>
-
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Новогодняя распродажа от Максима Темченко</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
-
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-              <div class="col-lg-12 hdr-1">
-                <img class="img-scr" src="https://fin-1.com/pl/fileservice/user/file/download?h=c806849d45d74f1bf798b9c44f75bd03.png" alt="">
-              </div>
-              <div class="col-lg-12 hdr-2">
-                <h1>Новогодняя распродажа от Максима Темченко</h1>
-              </div>
-              <div class="col-lg-12 hdr-3">
-                <p class="redbl">Забирайте комплект тренингов со скидкой от <strong>45% до 80%</strong> и сэкономьте до <strong>207 776 рублей</strong> только с 24 по 27 декабря!</p>
-              </div>
+  <header>
+      <div class="header-content">
+          <div class="header-content-inner">
+            <div class="col-lg-12 hdr-1">
+              <img class="img-scr" src="images/img2.png" alt="">
             </div>
-        </div>
-    </header>
-
-    <aside class="bg-primary">
-
-
-
-
-
-<div class="triangle-box">
-  <div class="triangle-content">
-  <p>Уже более<br>10 лет<br>я обучаю:</p>
-
-  </div>
-</div>
-
-        <div class="container text-center">
-            <div class="call-to-action">
-
-              <div class="col-lg-6 col-sm-6">
-
-
-<div class="right-arrow p-w-1">зарабатывать больше</div>
-<div class="right-arrow p-w-2">финансовой грамотности</div>
-<div class="right-arrow p-w-3">откладывать и делать правильные инвестиции</div>
-
-
+            <div class="col-lg-12 hdr-2">
+              <h1>Новогодняя распродажа от Максима Темченко</h1>
             </div>
-
-              <div class="col-lg-6 col-sm-6">
-
-<div class="left-arrow p-w-1">безболезненно снижать расходы</div>
-<div class="left-arrow p-w-2">формировать долгосрочный капитал</div>
-<div class="left-arrow p-w-3">достигать целей, воплощать желания и жить Жизнью Мечты!</div>
-
-
-              </div>
-        </div>
-    </aside>
-
-
-
-
-    <section class="bg-advantages">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2 class="section-heading text-black">На Новый Год принято дарить подарки, поэтому я подготовил подарки для Вас!</h2>
-                    <p class="text-red text-med">Только с 24 по 27 декабря:</p>
-
-
-
-
-            <div class="col-lg-8 col-md-8 col-sm-8 text-black">
-                <ul class="lst">
-                  <li class="mb-4 text-med text-left">Вы экономите на обучении от 24 106 до 207 776 рублей</p></li>
-                  <li class="mb-4 text-med text-left">Получите дополнительные подарки</p></li>
-                </ul>
+            <div class="col-lg-12 hdr-3">
+              <p class="redbl">Забирайте комплект тренингов со скидкой от <strong>45% до 80%</strong> и сэкономьте до <strong>207 776 рублей</strong> только с 24 по 27 декабря!</p>
             </div>
+          </div>
+      </div>
+  </header>
 
-            <div class="col-lg-6 text-black"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section class="complects-title">
-    <div class="komplekt-title">
-        <div class="col-lg-10 col-lg-offset-1 text-black">
-        <p class="mb-4 text-center text-med"><strong>Выбирайте свой комплект, оформляйте и оплачивайте заказ со скидкой.<br>Зачем потом переплачивать за то, что можно купить дешевле сейчас?</strong></p>
-        </div>
+  <aside class="bg-primary">
+    <div class="triangle-box">
+      <div class="triangle-content">
+        <p>Уже более<br>10 лет<br>я обучаю:</p>
+      </div>
     </div>
-</section>
 
+    <div class="container text-center">
+      <div class="call-to-action">
+        <div class="col-lg-6 col-sm-6">
+          <div class="right-arrow p-w-1">зарабатывать больше</div>
+          <div class="right-arrow p-w-2">финансовой грамотности</div>
+          <div class="right-arrow p-w-3">откладывать и делать правильные инвестиции</div>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="left-arrow p-w-1">безболезненно снижать расходы</div>
+          <div class="left-arrow p-w-2">формировать долгосрочный капитал</div>
+          <div class="left-arrow p-w-3">достигать целей, воплощать желания и жить Жизнью Мечты!</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <section class="bg-advantages">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h2 class="section-heading text-black">На Новый Год принято дарить подарки, поэтому я подготовил подарки для Вас!</h2>
+                  <p class="text-red text-med">Только с 24 по 27 декабря:</p>
+
+          <div class="col-lg-8 col-md-8 col-sm-8 text-black">
+              <ul class="lst">
+                <li class="mb-4 text-med text-left">Вы экономите на обучении от 24 106 до 207 776 рублей</p></li>
+                <li class="mb-4 text-med text-left">Получите дополнительные подарки</p></li>
+              </ul>
+          </div>
+
+          <div class="col-lg-6 text-black"></div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="complects-title">
+    <div class="komplekt-title">
+      <div class="col-lg-10 col-lg-offset-1 text-black">
+        <p class="mb-4 text-center text-med"><strong>Выбирайте свой комплект, оформляйте и оплачивайте заказ со скидкой.<br>Зачем потом переплачивать за то, что можно купить дешевле сейчас?</strong></p>
+      </div>
+    </div>
+  </section>
 
 
 <section class="complects">
@@ -264,11 +91,11 @@ $(document).ready(function() {
       <div class="col-md-4 img-tag">
         <div class="tag">
             <div class="skidka">
-            <img class="img-scr" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/261/h/e7f33227cb9bdd698df25f9cf2490d52.png" alt="" >
+            <img class="img-scr" src="images/label.png" alt="" >
             <div class="skidka-centered">-80%</div>
             </div>
         </div>
-        <img class="img-scr" src="https://fin-1.com/pl/fileservice/user/file/download?h=f600eebd3d37c21e6ee7a3a990fdbe18.png" title="" alt="">
+        <img class="img-scr" src="images/box1.png" title="" alt="">
     </div>
 
      <div class="col-md-8">
@@ -444,20 +271,16 @@ $(document).ready(function() {
 
   </div>
 
-
 <div class="row">
-        <div class="col-lg-4 col-md-4 text-center">
-                <p class="old-price">29 806 ₽</p>
-        </div>
-
-        <div class="col-lg-4 col-md-4 text-center">
-                <p class="new-price">5 700 ₽</p>
-        </div>
-
-        <div class="col-lg-4 col-md-4">
-               <p><a href="#" class="btn btn-red">Забрать комплект</a></p>
-        </div>
-
+  <div class="col-lg-4 col-md-4 text-center">
+    <p class="old-price">29 806 ₽</p>
+  </div>
+  <div class="col-lg-4 col-md-4 text-center">
+    <p class="new-price">5 700 ₽</p>
+  </div>
+  <div class="col-lg-4 col-md-4">
+    <p><a href="#" class="btn btn-red">Забрать комплект</a></p>
+  </div>
 </div>
 
       </div>
@@ -472,11 +295,11 @@ $(document).ready(function() {
       <div class="col-md-4 img-tag">
         <div class="tag">
             <div class="skidka">
-            <img class="img-scr" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/261/h/e7f33227cb9bdd698df25f9cf2490d52.png" alt="" >
+            <img class="img-scr" src="images/label.png" alt="" >
             <div class="skidka-centered">-73%</div>
             </div>
         </div>
-        <img class="img-scr" src="https://fin-1.com/pl/fileservice/user/file/download?h=1f1219a45b9858f3877ba9693a9278da.png" title="" alt="">
+        <img class="img-scr" src="images/box2.png" title="" alt="">
     </div>
 
      <div class="col-md-8">
@@ -563,11 +386,11 @@ $(document).ready(function() {
       <div class="col-md-4 img-tag">
         <div class="tag">
             <div class="skidka">
-            <img class="img-scr" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/261/h/e7f33227cb9bdd698df25f9cf2490d52.png" alt="" >
+            <img class="img-scr" src="images/label.png" alt="" >
             <div class="skidka-centered">-65%</div>
             </div>
         </div>
-        <img class="img-scr" src="https://fin-1.com/pl/fileservice/user/file/download?h=c1743ee21b2e2f06fbaa79d51e87bc7b.png" title="" alt="">
+        <img class="img-scr" src="images/box3.png" title="" alt="">
     </div>
 
      <div class="col-md-8">
@@ -673,11 +496,11 @@ $(document).ready(function() {
       <div class="col-md-4 img-tag">
         <div class="tag">
             <div class="skidka">
-            <img class="img-scr" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/261/h/e7f33227cb9bdd698df25f9cf2490d52.png" alt="" >
+            <img class="img-scr" src="images/label.png" alt="" >
             <div class="skidka-centered">-60%</div>
             </div>
         </div>
-        <img class="img-scr" src="https://fin-1.com/pl/fileservice/user/file/download?h=c298dcc9b391ad0c9a677ac0b0b464a1.png" title="" alt="">
+        <img class="img-scr" src="images/box4.png" title="" alt="">
     </div>
 
      <div class="col-md-8">
@@ -801,11 +624,11 @@ $(document).ready(function() {
       <div class="col-md-4 img-tag">
         <div class="tag">
             <div class="skidka">
-            <img class="img-scr" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/261/h/e7f33227cb9bdd698df25f9cf2490d52.png" alt="" >
+            <img class="img-scr" src="images/label.png" alt="" >
             <div class="skidka-centered">-45%</div>
             </div>
         </div>
-        <img class="img-scr" src="https://fin-1.com/pl/fileservice/user/file/download?h=825a306084c790d0610e44cc2e6e102d.png" title="" alt="">
+        <img class="img-scr" src="images/box5.png" title="" alt="">
     </div>
 
      <div class="col-md-8">
@@ -910,15 +733,15 @@ $(document).ready(function() {
       <div class="col-lg-12 img-tag">
         <div class="tag-boxes">
             <div class="skidka-boxes">
-            <img class="img-scr-boxes" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/261/h/e7f33227cb9bdd698df25f9cf2490d52.png" alt="" >
+            <img class="img-scr-boxes" src="images/label.png" alt="" >
             <div class="skidka-boxes-centered">-49%</div>
             </div>
         </div>
-        <img class="img-boxes" src="https://fin-1.com/pl/fileservice/user/file/download?h=c298dcc9b391ad0c9a677ac0b0b464a1.png" title="" alt="">
-        <img class="img-boxes" src="https://fin-1.com/pl/fileservice/user/file/download?h=825a306084c790d0610e44cc2e6e102d.png" title="" alt="">
-        <img class="img-boxes" src="https://fin-1.com/pl/fileservice/user/file/download?h=c1743ee21b2e2f06fbaa79d51e87bc7b.png" title="" alt="">
-        <img class="img-boxes" src="https://fin-1.com/pl/fileservice/user/file/download?h=1f1219a45b9858f3877ba9693a9278da.png" title="" alt="">
-        <img class="img-boxes" src="https://fin-1.com/pl/fileservice/user/file/download?h=f600eebd3d37c21e6ee7a3a990fdbe18.png" title="" alt="">
+        <img class="img-boxes" src="images/box4.png" title="" alt="">
+        <img class="img-boxes" src="images/box5.png" title="" alt="">
+        <img class="img-boxes" src="images/box3.png" title="" alt="">
+        <img class="img-boxes" src="images/box2.png" title="" alt="">
+        <img class="img-boxes" src="images/box1.png" title="" alt="">
     </div>
 
 </div>
@@ -1074,7 +897,7 @@ $(document).ready(function() {
 
               <div class="col-lg-6 col-sm-6">
                 <div class="portfolio-box">
-                  <img class="img-scr" src="https://fin-1.com/pl/fileservice/user/file/download?h=a9eb7695ba833cad9be3fb0211bd3ce4.png" alt="">
+                  <img class="img-scr" src="images/gift1.png" alt="">
                   <div class="portfolio-box-caption">
                         <span>Электронную версию книги «Из индейца в миллионеры»</span>
                   </div>
@@ -1083,7 +906,7 @@ $(document).ready(function() {
 
               <div class="col-lg-6 col-sm-6">
                 <div class="portfolio-box">
-                  <img class="img-scr" src="https://fin-1.com/pl/fileservice/user/file/download?h=7b9fa8510652b823471eed9b1093751f.png" alt="">
+                  <img class="img-scr" src="images/gift1.png" alt="">
                   <div class="portfolio-box-caption">
                      <span>Эксклюзивный комплект видео с Клуба Миллионеров, со «Сверхвозможностей», с тренинга «Богатый тренер» и с моих выступлений на бизнес-форумах *</span>
                   </div>
@@ -1119,10 +942,10 @@ $(document).ready(function() {
         </div>
 
         <div class="col-lg-10 col-lg-offset-1 text-center social">
-            <a href="https://vk.com/klub1000000" target="_blank" rel="nofollow"><img class="img-social" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/391/h/f7e2dc04f7864fcb49e1bc7da1a7ea56.svg" alt=""></a>
-            <a href="https://www.facebook.com/finrestart/" target="_blank" rel="nofollow"><img class="img-social" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/350/h/eb7c6d9b35c28d9cda17b75e91e7ac90.svg" alt=""></a>
-            <a href="https://www.instagram.com/temchenkoru/" target="_blank" rel="nofollow"><img class="img-social" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/301/h/5d5c9fa19de0e645a78fbc121d29cf77.svg" alt=""></a>
-            <a href="https://www.youtube.com/user/temmaxxx" target="_blank" rel="nofollow"><img class="img-social" src="https://fs.getcourse.ru/fileservice/file/download/a/14105/sc/83/h/264ec55193f0c571050af7dc26bc8003.svg" alt=""></a>
+            <a href="https://vk.com/klub1000000" target="_blank" rel="nofollow"><img class="img-social" src="images/vk.svg" alt=""></a>
+            <a href="https://www.facebook.com/finrestart/" target="_blank" rel="nofollow"><img class="img-social" src="images/fb.svg" alt=""></a>
+            <a href="https://www.instagram.com/temchenkoru/" target="_blank" rel="nofollow"><img class="img-social" src="images/in.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/temmaxxx" target="_blank" rel="nofollow"><img class="img-social" src="images/yt.svg" alt=""></a>
         </div>
 
         <div class="row">
