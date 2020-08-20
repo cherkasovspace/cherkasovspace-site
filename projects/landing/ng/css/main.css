@@ -825,13 +825,13 @@ margin: 20px;
       padding: 30px 0;
   }
 
-.tag-boxes {
-    z-index: -1;
-    padding: 5px;
-    left: 50%;
-    top: -21%;
-    transform: translate(-50%,-50%);
-}
+  .tag-boxes {
+      z-index: -1;
+      padding: 5px;
+      left: 50%;
+      top: -21%;
+      transform: translate(-50%,-50%);
+  }
 
   .bg-gifts {
       padding: 30px 0;
