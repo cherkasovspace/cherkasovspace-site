@@ -837,4 +837,8 @@ margin: 20px;
       padding: 30px 0;
   }
 
+  .right-arrow, .left-arrow {
+      margin: 15px auto;
+  }
+
 }
