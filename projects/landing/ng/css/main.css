@@ -777,7 +777,7 @@ display: flex;
     max-width: 100%;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 500px) {
 
   .triangle-box .triangle-content p {
     font-size: 2rem;
@@ -786,7 +786,7 @@ display: flex;
   .bg-primary:after {
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
-    border-top: 150px solid #ffffff;
+    border-top: 135px solid #ffffff;
   }
 
   .right-arrow,.left-arrow {
@@ -803,6 +803,13 @@ display: flex;
   }
 
 
+  .cta-list{
+    padding-top: 100px;
+  }
 
+  .p-w-1, .p-w-2, .p-w-3{
+    width:100%;
+    max-width: 100%;
+  }
 
 }
