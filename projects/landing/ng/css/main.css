@@ -1,16 +1,16 @@
 
 @font-face {
   font-family: 'Circe';
-  src: url("fonts/circe.woff") format("woff"),
-       url("fonts/circe.otf") format("opentype");
+  src: url("../fonts/circe.woff") format("woff"),
+       url("../fonts/circe.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'CirceBold';
-  src: url("fonts/circebold.woff") format("woff"),
-       url("fonts/circebold.otf") format("opentype");
+  src: url("../fonts/circebold.woff") format("woff"),
+       url("../fonts/circebold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
