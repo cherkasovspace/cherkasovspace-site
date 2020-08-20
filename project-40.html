@@ -1,0 +1,127 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="project-33.html"><i class="pe-7s-icon pe-7s-angle-left"></i></a>
+                <a class="ajax-page-load" href="project-1.html"><i class="pe-7s-icon pe-7s-angle-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="pe-7s-icon pe-7s-close"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Сайт химчистки-прачечной «Кассиопея»</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <div class="owl-carousel portfolio-page-carousel">
+                    <div id="layoutgallery" class="item">
+                        <img src="images/projects/34-project.jpg" alt="">
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+
+                $('#layoutgallery').on('click', function() {
+
+                    $(this).lightGallery({
+                        actualSize: false,
+                        hash: false,
+                        download: false,
+                        share: false,
+                        hideBarsDelay: 2000,
+                        dynamic: true,
+                        dynamicEl: [{
+                            "src": 'images/projects/34-project-1.jpg',
+                            'thumb': 'images/projects/34-project-1.jpg',
+                            'subHtml': '<h4>Сайт химчистки-прачечной «Кассиопея»</h4>'
+                        },
+                        {
+                            "src": 'images/projects/34-project-2.jpg',
+                            'thumb': 'images/projects/34-project-2.jpg',
+                            'subHtml': '<h4>Сайт химчистки-прачечной «Кассиопея» - цены</h4>'
+                        },
+                        {
+                            "src": 'images/projects/34-project-3.jpg',
+                            'thumb': 'images/projects/34-project-3.jpg',
+                            'subHtml': '<h4>Сайт химчистки-прачечной «Кассиопея» - корзина</h4>'
+                        }]
+                    })
+
+                });
+
+                function customAjaxScroll() {
+                    var windowWidth = $(window).width();
+                    if (windowWidth > 991) {
+                        // Custom Ajax Page Scroll
+                        $("#ajax-page").mCustomScrollbar({
+                            scrollInertia: 8,
+                            documentTouchScroll: false
+                        });
+                    } else {
+                        $("#ajax-page").mCustomScrollbar('destroy');
+                    }
+                }
+
+                jQuery(document).ready(function($){
+
+                    // Ajax Loaded Page Scroll
+                    customAjaxScroll();
+
+                    $('.portfolio-page-carousel').owlCarousel({
+                        smartSpeed:1200,
+                        items: 1,
+                        loop: true,
+                        dots: true,
+                        nav: true,
+                        navText: false,
+                        margin: 10
+                    });
+
+                });
+
+                jQuery(window).on('resize', function() {
+                    customAjaxScroll();
+                });
+                </script>
+            </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="block-title">
+                    <h3>Описание</h3>
+                </div>
+                <ul class="project-general-info">
+                    <li><p><i class="fa fa-info-circle"></i> Создание сайта</p></li>
+                    <li><p><i class="fa fa-calendar"></i> 2020</p></li>
+                </ul>
+
+                <p class="text-justify">Компания имеет огромный опыт в химической чистке и стирке одежды. Производит индивидуальную обработку вещей. Работает с частными и корпоративными клиентами.</p>
+
+                <!-- Technology -->
+                <div class="tags-block">
+                    <ul class="tags">
+                        <li><a>HTML5</a></li>
+                        <li><a>CSS3</a></li>
+                        <li><a>Flexbe</a></li>
+                    </ul>
+                </div>
+                <!-- /Technology -->
+
+                <a href="https://chistkastirka.ru/" rel="nofollow" target="_blank" class="cbtn nav-link">
+                    <div class="cbtn-bottom"></div>
+                    <div class="cbtn-top">
+                    <div class="cbtn-label">Просмотр</div>
+                    <div class="cbtn-border cbtn-border-left"></div>
+                    <div class="cbtn-border cbtn-border-top"></div>
+                    <div class="cbtn-border cbtn-border-right"></div>
+                    <div class="cbtn-border cbtn-border-bottom"></div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
