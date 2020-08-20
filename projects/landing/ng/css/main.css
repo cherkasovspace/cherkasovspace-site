@@ -381,7 +381,8 @@ body {
 
 .panel-default>.panel-heading a {
   display: block;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 40px;
+  position: relative;
 }
 
 .panel-default>.panel-heading a[aria-expanded="true"] {
@@ -400,8 +401,9 @@ body {
   vertical-align: bottom;
   height: 18px;
   width: 18px;
-  margin-right: 10px;
+  left: 13px;
   float: left;
+  position: absolute;
 }
 
 .panel-default>.panel-heading a[aria-expanded="true"]:before {
@@ -414,8 +416,9 @@ body {
   width: 18px;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
-  margin-right: 10px;
+  left: 13px;
   float: left;
+  position: absolute;
 }
 
 .accordion-option {
@@ -810,6 +813,11 @@ display: flex;
   .p-w-1, .p-w-2, .p-w-3{
     width:100%;
     max-width: 100%;
+  }
+
+  .bg-advantages {
+    padding: 30px 0 30px 0;
+    background-position: left;
   }
 
 }
