@@ -113,7 +113,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("./images/fon.png");
+  background-image: url("../images/fon.png");
   text-align: center;
   color: white;
 }
@@ -503,7 +503,7 @@ padding: 20px;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("./images/fon2.png");
+  background-image: url("../images/fon2.png");
   text-align: center;
   color: white;
 }
@@ -517,7 +517,7 @@ padding: 20px;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("./images/fon3.png");
+  background-image: url("../images/fon3.png");
   text-align: center;
   color: white;
 }
