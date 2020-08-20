@@ -395,7 +395,7 @@ body {
 .panel-default>.panel-heading a[aria-expanded="false"]:before {
   display: inline-block;
   content: ' ';
-  background-image: url(images/before.png);
+  background-image: url(../images/before.png);
   background-position: center;
   vertical-align: bottom;
   height: 18px;
@@ -407,7 +407,7 @@ body {
 .panel-default>.panel-heading a[aria-expanded="true"]:before {
   display: inline-block;
   content: ' ';
-  background-image: url(images/before.png);
+  background-image: url(../images/before.png);
   background-position: center;
   vertical-align: bottom;
   height: 18px;
@@ -631,7 +631,7 @@ display: flex;
 
 .lst li{
   font-weight: 700;
-  background-image: url(images/li.png);
+  background-image: url(../images/li.png);
     background-repeat: no-repeat;
     line-height: 30px;
     padding-left: 38px;
