@@ -28,6 +28,7 @@
                 hash: false,
                 download: false,
                 share: false,
+                showThumbByDefault: false,
                 hideBarsDelay: 2000,
                 selector: 'figure'
             });
@@ -61,6 +62,7 @@
                     hash: false,
                     download: false,
                     share: false,
+                    showThumbByDefault: false,
                     hideBarsDelay:  2000,
                     selector: '.filtered'
                 });
@@ -79,6 +81,7 @@
                         hash: false,
                         download: false,
                         share: false,
+                        showThumbByDefault: false,
                         hideBarsDelay:  2000,
                         selector: '.prj'
                     });
