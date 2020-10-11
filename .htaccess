@@ -61,6 +61,7 @@ AddType application/octet-stream .doc .mov .avi .pdf .xls
     #кэшировать флэш и изображения на месяц
     ExpiresByType image/x-icon "access plus 2592000 seconds"
     ExpiresByType image/jpeg "access plus 2592000 seconds"
+    ExpiresByType image/jpg "access plus 2592000 seconds"
     ExpiresByType image/png "access plus 2592000 seconds"
     ExpiresByType image/gif "access plus 2592000 seconds"
     ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
