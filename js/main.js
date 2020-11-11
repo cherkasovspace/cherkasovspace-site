@@ -47,7 +47,7 @@
                 portfolio_grid.data('lightGallery').destroy(true);
                 }
 
-                if ( ($('#portfolio_filters a').hasClass("noprj")) && (portfolio_grid.lightGallery({selector: '.stv'}))  ){
+                if ( ($('#portfolio_filters a').hasClass("stv"))  ){
                     portfolio_grid.data('lightGallery').destroy(true);
                 }                
 
